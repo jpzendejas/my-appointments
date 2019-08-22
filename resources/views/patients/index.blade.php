@@ -5,10 +5,10 @@
             <div class="card-header border-0">
               <div class="row align-items-center">
                 <div class="col">
-                  <h3 class="mb-0">Médicos</h3>
+                  <h3 class="mb-0">Pacientes</h3>
                 </div>
                 <div class="col text-right">
-                  <a href="{{url('doctors/create')}}" class="btn btn-sm btn-success">Nuevo médico</a>
+                  <a href="{{url('patients/create')}}" class="btn btn-sm btn-success">Nuevo paciente</a>
                 </div>
               </div>
             </div>
@@ -33,25 +33,25 @@
                   </tr>
                 </thead>
                 <tbody>
-                  @foreach($doctors as $doctor)
+                  @foreach($patients as $patient)
                   <tr>
                     <th scope="row">
-                      {{$doctor->name}}
+                      {{$patient->name}}
                     </th>
                     <td>
-                      {{$doctor->email}}
+                      {{$patient->email}}
 
                     </td>
                     <td>
-                      {{$doctor->curp}}
+                      {{$patient->curp}}
 
                     </td>
 
                     <td>
-                      <form class="" action="{{url('/doctors/'.$doctor->id)}}" method="post">
+                      <form class="" action="{{url('/patients/'.$patient->id)}}" method="post">
                         @csrf
                         @method('DELETE')
-                        <a href="{{url('/doctors/'.$doctor->id.'/edit')}}" class="btn btn-sm btn-primary">Editar</a>
+                        <a href="{{url('/patients/'.$patient->id.'/edit')}}" class="btn btn-sm btn-primary">Editar</a>
                         <button class="btn btn-sm btn-danger" type="submit">Eliminar</button>
                       </form>
 
@@ -65,7 +65,7 @@
             </div>
             <div class="card-body">
 
-              {{$doctors->links()}}
+              {{$patients->links()}}
             </div>
           </div>
 
