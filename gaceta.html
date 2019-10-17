@@ -1,0 +1,2222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Presidencia Municipal de Salamanca, Guanajuato</title>
+  <link rel="icon" href="images/logos/omc.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> -->
+  <link rel="icon" href="images/omc.ico">
+  <link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira:100,200,300,400,500,600,700,800,900&display=swap&subset=latin-ext" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery-2.1.1.min.js"> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <link href='packages/core/main.css' rel='stylesheet' />
+  <link href='packages/daygrid/main.css' rel='stylesheet' />
+  <link href='packages/timegrid/main.css' rel='stylesheet' />
+  <link href='packages/list/main.css' rel='stylesheet' />
+  <script src='packages/core/main.js'></script>
+  <script src='packages/core/locales-all.js'></script>
+  <script src='packages/interaction/main.js'></script>
+  <script src='packages/daygrid/main.js'></script>
+  <script src='packages/timegrid/main.js'></script>
+  <script src='packages/list/main.js'></script>
+  <style>
+  *{margin:0; padding:0; font-family: 'Saira', sans-serif;}
+    /* Add a gray background color and some padding to the footer */
+    /* IE8 and below specific CSS */
+    .btns{
+        margin: 4px;
+        box-shadow: 1px 1px 5px #888888;
+    }
+
+    .btn-xs{
+        font-weight: 300;
+    }
+
+    .btn-hot {
+    color: #fff;
+    background-color: #db5566;
+    border-bottom:2px solid #af4451;
+    }
+
+    .btn-hot:hover, .btn-sky.active:focus, .btn-hot:focus, .open>.dropdown-toggle.btn-hot {
+    color: #fff;
+    background-color: #df6a78;
+    border-bottom:2px solid #b25560;
+    outline: none;}
+
+
+    .btn-hot:active, .btn-hot.active {
+    color: #fff;
+    background-color: #c04b59;
+    border-top:2px solid #9a3c47;
+    margin-top: 2px;
+    }
+
+    .btn-sunny {
+    color: #fff;
+    background-color: #f4ad49;
+    border-bottom:2px solid #c38a3a;
+    }
+
+    .btn-sunny:hover, .btn-sky.active:focus, .btn-sunny:focus, .open>.dropdown-toggle.btn-sunny {
+    color: #fff;
+    background-color: #f5b75f;
+    border-bottom:2px solid #c4924c;
+    outline: none;
+    }
+
+
+    .btn-sunny:active, .btn-sunny.active {
+    color: #fff;
+    background-color: #d69840;
+    border-top:2px solid #ab7a33;
+    margin-top: 2px;
+    }
+
+    .btn-fresh {
+    color: #fff;
+    background-color: #51bf87;
+    border-bottom:2px solid #41996c;
+    }
+
+    .btn-fresh:hover, .btn-sky.active:focus, .btn-fresh:focus, .open>.dropdown-toggle.btn-fresh {
+    color: #fff;
+    background-color: #66c796;
+    border-bottom:2px solid #529f78;
+    outline: none;
+    }
+
+
+    .btn-fresh:active, .btn-fresh.active {
+    color: #fff;
+    background-color: #47a877;
+    border-top:2px solid #39865f;
+    outline: none;
+    outline-offset: none;
+    margin-top: 2px;
+    }
+
+    .btn-sky {
+    color: #fff;
+    background-color: #0bacd3;
+    border-bottom:2px solid #098aa9;
+    }
+
+    .btn-sky:hover,.btn-sky.active:focus, .btn-sky:focus, .open>.dropdown-toggle.btn-sky {
+    color: #fff;
+    background-color: #29b6d8;
+    border-bottom:2px solid #2192ad;
+    outline: none;
+    }
+
+    .btn-sky:active, .btn-sky.active {
+    color: #fff;
+    background-color: #0a97b9;
+    border-top:2px solid #087994;
+    outline-offset: none;
+    margin-top: 2px;
+    }
+
+    .btn:focus,
+    .btn:active:focus,
+    .btn.active:focus {
+        outline: none;
+        outline-offset: 0px;
+    }
+    .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      min-height: 200px;
+    }
+
+    #boton_envivo{
+      background-color:#5a2d3f;
+      /* border-color: #5a2d3f; */
+      font-weight: bold;
+      color:#fff;
+      font-size: 1em;
+
+    }
+    #boton_envivo:hover{
+      background-color: #5a2d3f;
+      /* border-color: #5a2d3f; */
+    }
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+    @media (max-width: 400px) {
+      .carousel-caption {
+        display: none;
+
+      }
+    }
+    #imagen{
+      width: 91%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }}}
+    .margen{
+      left:auto;
+    }
+    .card-title{
+      font-weight:bold;
+    }
+    .card-body{
+      background-color: #e6e6e6;
+    }
+    .noticias{
+      color:#666666;
+    }
+    .card-text{
+      color:#666666;
+
+    }
+    .card-img-top{
+      height: 100%;
+    }
+    .card{
+      height: 350px;
+    }
+    .icono{
+      margin-top: -5px;
+      padding-top:0;
+    }
+    .emergencias{
+      /* margin: 10px; */
+      /* background-color:#ffb905; */
+      font-size: 30px;
+      text-align:center;
+      font-weight: bold;
+      color:#4d4d4d;
+    }
+    .emergenciaspan{
+      margin: 20px;
+      margin-top: 50px;
+      height: auto;
+    }
+    .nav-link{
+      font-weight: bold;
+      align: right;
+      font-size: 20px;
+    }
+    .navbar{
+      background-color: white;
+    }
+    .links{
+      color:#666666;
+    }
+    .linksdos{
+      color:black;
+    }
+        .footer{
+      width:auto; margin:0 auto;
+      margin-top:76px;
+      overflow:hidden;
+      background: url(images/pleca_piepagina.jpg);
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .footer p{
+      color:#cf9359;}
+
+      #mas_ordinaria {
+        display:none;
+        text-align: justify;
+        text-align: auto;
+      }
+      #mas_extra {
+        display:none;
+        text-align: justify;
+        text-align: auto;
+      }
+      #mas_comisiones_derechoshumanos {
+        display:none;
+        text-align: justify;
+        text-align: auto;
+      }
+      #mas_comisiones_ordenamiento{
+        display:none;
+        text-align: justify;
+        text-align: auto;
+      }
+      #mas_comisiones_gobierno{
+        display:none;
+        text-align: justify;
+        text-align: auto;
+      }
+      #mas_comisiones_migrante{
+        display:none;
+        text-align: justify;
+        text-align: auto;
+      }
+    .bienvendida{
+      text-align: justify;
+    }
+    .comisiones{
+      font-size:12px;
+      color: #2a70a2;
+    }
+    #myBtn{
+    border-radius:0;
+    outline:none;
+    border: 0;
+    background-color: transparent;
+    color: #ffb905;
+    text-align: left;
+    margin-left: -1.7%;
+    }
+    #boton_ordinaria{
+    border-radius:0;
+    outline:none;
+    border: 0;
+    background-color: transparent;
+    color: #ffb905;
+    text-align: left;
+    margin-left: -1.7%;
+    font-size:15px;
+    }
+    #boton_extra{
+    border-radius:0;
+    outline:none;
+    border: 0;
+    background-color: transparent;
+    color: #ffb905;
+    text-align: left;
+    margin-left: -1.7%;
+    font-size:15px;
+    }
+    #boton_comisiones_derechoshumanos{
+    border-radius:0;
+    outline:none;
+    border: 0;
+    background-color: transparent;
+    color: #ffb905;
+    text-align: left;
+    margin-left: -1.7%;
+    font-size:15px;
+    }
+    #boton_comisiones_ordenamiento{
+    border-radius:0;
+    outline:none;
+    border: 0;
+    background-color: transparent;
+    color: #ffb905;
+    text-align: left;
+    margin-left: -1.7%;
+    font-size:15px;
+    }
+    #boton_comisiones_gobierno{
+    border-radius:0;
+    outline:none;
+    border: 0;
+    background-color: transparent;
+    color: #ffb905;
+    text-align: left;
+    margin-left: -1.7%;
+    font-size:15px;
+    }
+    #boton_comisiones_migrante{
+    border-radius:0;
+    outline:none;
+    border: 0;
+    background-color: transparent;
+    color: #ffb905;
+    text-align: left;
+    margin-left: -1.7%;
+    font-size:15px;
+    }
+    .fotogabinete{
+      height: 250px;
+      width: 250px;
+      margin-top:3%;
+      border-radius: 20px 20px 20px 20px;
+    }
+    .cajagabinete{
+      -webkit-box-shadow:0 1px 4px #cfd2d3,0 0 40px rgba(0, 0, 0, 0.1) inset;
+   -moz-box-shadow:0 1px 4px #cfd2d3, 0 0 40px rgba(0, 0, 0, 0.1) inset;
+   box-shadow:0 1px 4px #cfd2d3, 0 0 40px rgba(0, 0, 0, 0.1) inset;
+   margin-bottom: 2%;
+    }
+    .accesos ul li i{
+      background:url('images/icon-arrow.png') no-repeat left;
+      padding-left:25px;
+      color:#978e86;
+    }
+    .sesiones ul li i{
+      background:url('images/icon-arrow.png') no-repeat left;
+      padding-left:25px;
+      color:#fcb600;
+    }
+    .dropdown-submenu {
+      position: relative;
+      margin-top: 1%;
+      margin-bottom: 1%;
+    }
+
+    .dropdown-submenu .dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-top: -1px;
+    }
+    ul.dropdown-menu a.submenu:hover {
+      color: #5a2d3f;
+      background-color:none;
+      font-weight: bold;
+      -moz-transition: all 100ms ease-in-out 0s;
+      -ms-transition: all 100ms ease-in-out 0s;
+      -o-transition: all 100ms ease-in-out 0s;
+      -webkit-transition: all 100ms ease-in-out 0s;
+      transition: all 100ms ease-in-out 0s;
+    }
+    .dropdown-submenu {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown-submenu:hover .dropdown-menu {
+      display: block;
+    }
+    .botones{
+      background-color:white;
+      border:none;
+      margin-top:-2%;
+      text-align: left;
+      font-size:13px;
+      /* font-weight: bold; */
+    }
+    .botones:hover{
+      color:#303e48;
+      /* text-decoration: underline; */
+      font-weight:500;
+
+    }
+    .modal-body {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+.noclick{
+  cursor: not-allowed;
+  pointer-events: none;
+
+}
+
+  </style>
+  <!--  -->
+  <!-- <script type="text/javascript">
+      $(document).ready(function cargar() {
+          $("#contenidopagina").load('inicio.html');
+      });
+    </script> -->
+<!-- <script type="text/javascript">
+function submitPoll(){
+document.getElementById("boton_envivo").disabled = true;
+setTimeout(function() {
+  document.getElementById("boton_envivo").disabled = false;
+}, 5000);
+
+}
+
+document.getElementById("boton_envivo").addEventListener("click", submitPoll);
+</script> -->
+
+
+<script type="text/javascript">
+function verSesion() {
+  // var URL = "https://www.youtube.com/watch?v=KzUiBfZRV-I";
+  var URL = "https://www.youtube.com/channel/UCfrWEPqU7PxSRYtwtsz6DTA";
+  // var URL = "";
+  var boton_envivo = document.getElementById("boton_envivo");
+
+  if (URL != null) {
+     window.open(URL);
+  }else {
+  // document.getElementById("boton_envivo").disabled = true;
+     boton_envivo.classList.add("noclick");
+  }
+
+}
+</script>
+
+
+    <script type="text/javascript">
+    function vermas_sordinaria() {
+      var dots_ordinaria = document.getElementById("dots_ordinaria");
+      var mas_ordinaria = document.getElementById("mas_ordinaria");
+      var boton_ordinaria = document.getElementById("boton_ordinaria");
+        $('#mas_ordinaria').toggle('slow');
+
+      if (dots_ordinaria.style.display === "none") {
+        dots_ordinaria.style.display = "inline";
+        boton_ordinaria.innerHTML = "&nbsp;Ver más..";
+        mas_ordinaria.style.display = "none";
+      } else {
+        dots_ordinaria.style.display = "none";
+        boton_ordinaria.innerHTML = "&nbsp; Ver menos";
+        mas_ordinaria.style.display = "inline";
+      }
+    }
+    </script>
+
+    <script type="text/javascript">
+    function vermas_sextra() {
+      var puntos_extra = document.getElementById("puntos_extra");
+      var mas_extra = document.getElementById("mas_extra");
+      var boton_extra = document.getElementById("boton_extra");
+        $('#mas_extra').toggle('slow');
+
+      if (puntos_extra.style.display === "none") {
+        puntos_extra.style.display = "inline";
+        boton_extra.innerHTML = "&nbsp;Ver más..";
+        mas_extra.style.display = "none";
+      } else {
+        puntos_extra.style.display = "none";
+        boton_extra.innerHTML = "&nbsp; Ver menos";
+        mas_extra.style.display = "inline";
+      }
+    }
+    </script>
+
+  <script type="text/javascript">
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "&nbsp;Leer más..";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "&nbsp; Leer menos";
+      moreText.style.display = "inline";
+    }
+  }
+  </script>
+  <script type="text/javascript">
+  function cambiar() {
+    var autoplay ="?rel=0&amp;autoplay=1";
+    var src="https://www.youtube.com/embed/RB7WJ75pdaM?rel=0&amp;autoplay=1";
+    document.getElementById('video').src=src;
+    }
+    function cambiar1() {
+      var autoplay ="?rel=0&amp;autoplay=1";
+    var src="https://www.youtube.com/embed/5drZEbdGggg?rel=0&amp;autoplay=1";
+    document.getElementById('video').src=src;
+    }
+    function cambiar2() {
+      var autoplay ="?rel=0&amp;autoplay=1";
+    var src="https://www.youtube.com/embed/-LEmaA39ufo?rel=0&amp;autoplay=1";
+    document.getElementById('video').src=src;
+    }
+  </script>
+
+  <!-- <script type="text/javascript">
+		window.onload=function() {
+			alert('prueba de cargar función');
+		}
+    window.onload = function(){
+      cargar();
+    }
+		</script> -->
+
+  <script type="text/javascript">
+  $(document).ready( function() {
+      $("#inicio").on("click", function() {
+          $("#contenidopagina").load("inicio.html");
+      });
+      $("#gobierno").on("click", function() {
+          $("#contenidopagina").load("gobiernopage.html");
+      });
+  });
+  </script>
+  <!-- <script type="text/javascript">
+  $(document).ready( function() {
+      $("#gobierno").on("click", function() {
+          $("#contenidopagina").load("gobiernopage.html");
+      });
+  });
+  </script> -->
+  <!--  -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var initialLocaleCode = 'es';
+      // var localeSelectorEl = document.getElementById('locale-selector');
+      var calendarEl = document.getElementById('calendar');
+      var fecha =new Date();
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        plugins: [ 'interaction', 'dayGrid', 'timeGrid', 'list' ],
+        events: 'js/eventos_gaceta.json',
+        header: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
+        },
+        eventClick: function(info) {
+                $("#sesiontitulo").html(info.event.title);
+                // $("#fechasesion ").html(info.event.start);
+                $("#video_so").html(info.event.url);
+                // $("#videosesion").html(info.event.url);
+                $("#exampleModal").modal("show");
+                info.jsEvent.preventDefault();
+                },
+        defaultDate: fecha,
+        locale: initialLocaleCode,
+        buttonIcons: false, // show the prev/next text
+        weekNumbers: true,
+        navLinks: true, // can click day/week names to navigate views
+        editable: true,
+        eventLimit: true, // allow "more" link when too many events
+        // events: [
+        //   {
+        //     title: '20a Sesión Ordinaria del H. Ayuntamiento de Salamanca, Gto ',
+        //     start: '2019-07-03 08:00:00',
+        //     end: '2019-07-03 16:00:00',
+        //     color: '#5a2d3f',
+        //     url: '  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RB7WJ75pdaM?rel=0&amp;autoplay=1"  allowscriptaccess="always"></iframe>'
+        //   },
+        //   {
+        //     title: '21a Sesión Ordinaria del H. Ayuntamiento de Salamanca, Gto ',
+        //     start: '2019-07-25 12:00:00',
+        //     end: '2019-07-25 14:00:00',
+        //     color: '#5a2d3f',
+        //     url: '  <iframe id="video" class="embed-responsive-item" src="https://www.youtube.com/embed/tFEvyxXkIj0?rel=0&amp;autoplay=1"  allowscriptaccess="always"></iframe>'
+        //   },
+        //   {
+        //     title: '22a Sesión Ordinaria del H. Ayuntamiento de Salamanca, Gto ',
+        //     start: '2019-08-21 08:30:00',
+        //     end: '2019-08-21 14:00:00',
+        //     color: '#5a2d3f'
+        //     url: '  <iframe id="video" class="embed-responsive-item" src="https://www.youtube.com/embed/tFEvyxXkIj0?rel=0&amp;autoplay=1"  allowscriptaccess="always"></iframe>'
+        //   }
+        // ]
+      });
+
+      calendar.render();
+    });
+
+  </script>
+  <script >
+
+  function cargarindex(){
+     location.href="index.html";
+  }
+  </script>
+  <script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+<!--  -->
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.modal').each(function(){
+          var src = $(this).find('iframe').attr('src');
+
+      $(this).on('click', function(){
+
+          $(this).find('iframe').attr('src', '');
+          $(this).find('iframe').attr('src', src);
+
+      });
+  });
+});
+</script>
+<!--  -->
+<script type="text/javascript">
+  $( document ).ready(function vermas_derechosh() {
+    $('#derechos').on('click',function(){
+    $('#derechos_1').toggle('slow');
+  });
+  });
+</script>
+<script type="text/javascript">
+  $( document ).ready(function vermas_orden() {
+    $('#orden').on('click',function(){
+    $('#orden_1').toggle('slow');
+  });
+  });
+</script>
+<script type="text/javascript">
+  $( document ).ready(function vermas_gobierno() {
+    $('#gob').on('click',function(){
+    $('#gob_1').toggle('slow');
+  });
+  });
+</script>
+<script type="text/javascript">
+  $( document ).ready(function vermas_migrante() {
+    $('#migrante').on('click',function(){
+    $('#migrante_1').toggle('slow');
+  });
+  });
+</script>
+  <!--  -->
+</head>
+<!--  -->
+<body >
+  <!-- The Modal -->
+  <div class="modal fade" id="exampleModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="text-align:center; font-weight:bold; color:#303e48;">SESIÓN DEL H. AYUNTAMIENTO</h4>
+        </div>
+        <div class="modal-body" >
+          <h6 class="modal-title" id="fechasesion" style="font-style:italic;"></h6><br>
+          <h5 id="sesiontitulo" class="modal-title" style="text-align:center; font-weight:bold;"></h5><br>
+          <div class=" " id="video_so">
+
+          </div>
+          <!-- <div class="embed-responsive embed-responsive-16by9" id="videosesion" >
+          </div> -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="videocerrar" class="btn btn-default" style="background-color:#fcb600; border-color:#fcb600; color:white;" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <button type="button" name="boton_pleca" style="border:none;" onclick="cargarindex()">
+       <img src="images/pleca1.jpg" alt="" class="img-responsive" style="height:auto; width:auto; border-radius:none;" >
+       </button>
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- <a class="navbar-brand" href="#">Software Solutions</a> -->
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="menu" style="margin:1%;">
+        <ul class="nav navbar-nav">
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html" id="inicio" name="inicio" style="font-weight:bold; font-size:17px; color:black;"> INICIO</a></li>
+          <li><a href="gobierno.html" id="gobierno" name="gobierno" style="font-weight:bold; font-size:17px; color:black;"> GOBIERNO</a></li>
+          <li><a href="directorio.html" id="directorio" name="directorio" style="font-weight:bold; font-size:17px; color:black;"> DIRECTORIO</a></li>
+          <li><a href="http://www.salamanca.gob.mx/Transparencia/Transparencia.htm" style="font-weight:bold; font-size:17px; color:black;" target="_blank"> TRANSPARENCIA</a></li>
+          <li><a href="gaceta.html" id="gaceta" name="gaceta" style="font-weight:bold; font-size:17px; color:black;"> GACETA</a></li>
+          <!-- <li><a href="#" style="font-weight:bold; font-size:17px; color:black;" > DEPENDENCIAS</a></li> -->
+          <!-- <li><a href="#">Link</a></li> -->
+       <li class="dropdown">
+         <a class="menutramites" href="#" class="dropdown-toggle" style="font-weight:bold; font-size:17px; color:black; background-color:white;" data-toggle="dropdown">
+           DEPENDENCIAS <b class="caret"></b></a>
+         <ul class="dropdown-menu ">
+            <li><a class="submenu" href="casacultura/index.html" target="_blank">CASA DE LA CULTURA</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu ">
+              <a class="test submenu" tabindex="-1" href="#" style="" >DESARROLLO ECONÓMICO <i class="fa fa-caret-right"></i></a>
+
+              <ul class="dropdown-menu">
+                <!-- <li><a class="submenu" tabindex="-1" href="#" style="">Mejora Regulatoria</a></li> -->
+                <li><a class="submenu" tabindex="-1" href="sare/index.html" style="" target="_blank">SARE en línea</a></li>
+                <!-- <li><a class="submenu" tabindex="-1" href="#" style="" target="_blank">Bolsa de empleo</a></li> -->
+                <!-- <li class="dropdown-submenu">
+                  <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">3rd level dropdown</a></li>
+                    <li><a href="#">3rd level dropdown</a></li>
+                  </ul>
+                </li> -->
+              </ul>
+            </li>
+            <li class="divider"></li>
+           <li><a class="submenu" href="educacion/index.html" target="_blank">DIRECCIÓN DE EDUCACIÓN</a></li>
+           <li class="divider"></li>
+           <li><a class="submenu" href="turismo/index.html" target="_blank">TURISMO</a></li>
+           <!-- <li class="divider"></li> -->
+           <!-- <li><a href="#">Separated link</a></li> -->
+         </ul>
+       </li>
+          <li><a href="tramitesyservicios.html" style="font-weight:bold; font-size:17px; color:black;"> TRÁMITES Y SERVICIOS</a></li>
+
+          <!-- <li><a href="#" style="font-weight:bold; font-size:17px; color:black;"> BOLSA DE EMPLEO</a></li> -->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div id="contenidopagina" style="margin-top:12%;">
+        <!-- div de gobierno -->
+    <div class="gaceta" style="margin-top:19%;">
+    <div class="container-fluid" style="margin-top:19%;">
+      <div class="row" style="">
+        <div class="col-sm-1 col-md-1 col-lg-1">
+        </div>
+        <div class="col-sm-7 col-md-7 col-lg-7" style="margin-top:1%;  ">
+          <div class="">
+
+            <div class="col-sm-12" style="">
+              <br>
+              <span style="font-size:30px; font-weight:bold;">GACETA MUNICIPAL</span>
+              <!-- <span style="font-size:20px; padding-LEFT:1%; color:#fcb600;">MUNICIPAL</span> -->
+              <div class="column" style=" background-color:none; width: 100%; border-radius: 20px 20px 20px 20px; ">
+                <div class="row" style="">
+                  <br>
+                  <!--  -->
+                  <div class="text-center">
+                  <span style="font-size:13px; color:#5a2d3f; font-weight:bold;">EN EL CUMPLIMIENTO AL ARTÍCULO 74-1 DE LA LEY ORGÁNICA MUNICIPAL PARA EL ESTADO DE GUANAJUATO</span>
+                  </div>
+                  <hr>
+
+                  <span class="text-center" style="font-size:20px; padding-left:1%; color:#fcb600;">Agenda Mensual</span><br><br>
+                  <!-- <span class="text-right" style="text-align:right; float:right;"><button type="button" name="button">En Vivo</button> </span><br> -->
+                  <br><br>
+                  <!-- calendario -->
+                  <div id='calendar'></div>
+                <!--  -->
+                <!--  -->
+                </div>
+              </div>
+          </div>
+          </div>
+    <br>
+
+    <!--  -->
+          </div>
+          <div class="col-sm-4 col-md-3 col-lg-3" style="margin-top:4%; ">
+            <!-- <h2 style="text-align:center;">BUSCAR</h2> -->
+
+              <!-- <div class="" style="background-color:none;">
+                  <br>
+                  <div class=" col-md-12">
+                    <div class="">
+                      <br>
+                      <div class="container-fluid">
+                      	<div class="row">
+                              <div class="col-md-12">
+                              <span >Buscar en el sitio...</span>
+                                  <div id="custom-search-input" style="margin-top:2%;">
+                                      <div class="input-group col-md-12">
+                                          <input type="text" class="form-control input-lg" placeholder=""  style="background-color:none;
+                                          "/>
+                                          <span class="input-group-btn">
+                                              <button class="btn btn-info btn-lg"  style="background-color:#5a2d3f; border-color:#5a2d3f;
+                                              " type="button">
+                                                  <i class="glyphicon glyphicon-search"></i>
+                                              </button>
+                                          </span>
+                                      </div>
+                                  </div>
+                              </div>
+                      	</div>
+                      </div>
+                      <br>
+                    </div>
+                  </div>
+
+          </div> -->
+
+          <div class="column col-md-12" style="background-color:none; ">
+            <div class="col-sm-12 col-md-12 col-lg-12" style="margin-top:25px; ">
+              <div class="sesiones">
+                <div class="container-fluid">
+                    <div class="row">
+                          <div class="col-md-12">
+                              <div id="custom-search-input" style="margin-top:2%;">
+                                <div class="" style="background-color:none; ">
+                                  <h3 style="text-align:center;">Sesiones de Ayuntamiento</h3>
+                                  <div class="bienvendida"><br>
+                                    <span class="text-right" style="text-align:right;" >
+                                      <div class="well text-center" >
+  			<!-- <button type="button" class="btn btn-hot text-uppercase" ><a href="http://www.positiwitty.com/">Hot button</a></button> -->
+        <button type="button" id="boton_envivo"  name="button_envivo" onclick="verSesion()"
+        class="btn btns btn-primary btn-block btn-hot text-uppercase">
+          <i class="glyphicon glyphicon-facetime-video" style="margin-top:2%;"> </i>
+          &nbsp;SESIÓN&nbsp;EN VIVO</button>
+
+          </div>
+                                       </span><br>
+                                    <span style="font-size:13px;">SESIONES ORDINARIAS</span>
+                                    <br>
+                                    <ul class="fa-ul list-group list-group-flush  "style=" margin-left:0;"><hr>
+                                      <li><i class=" "></i><a href="#myModal_23" role="button" data-toggle="modal" style="" class="comisiones">23° SESIÓN ORDINARIA</a></li><hr>
+
+                                      <!-- Modal 23° SESIÓN ORDINARIA  -->
+                                      <div id="myModal_23" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog modal-lg">
+                                              <!-- Modal content-->
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                        VIGÉSIMA TERCERA SESIÓN ORDINARIA</h3>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                      <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                      <p><a href="sesionesA/23° Sesión Ordinaria/Orden del Dia 23º Sesión Ordinaria.pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                      <hr>
+                                                      <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p>
+                                                      <p><a href="sesionesA/23° Sesión Ordinaria/PROGRAMA DE SALUD MPAL. 2018-2021.pdf" target="_blank" style="text-decoration:underline;">PROGRAMA DE SALUD MUNICIPAL 2018-2021</a></p>
+                                                    </div><hr>
+                                                    <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/SV9L4Vj9cIg" data-target="#myModal_1">
+                                                      <ul class="list-inline">
+                                                      <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 23a Sesión Ordinaria
+                                                      </ul>
+                                                    </button>
+                                                    <div class="text-right">
+                                                      <span>Emisión: 26 Agosto 2019</span>
+                                                    </div><br>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Fin Modal 23° SESIÓN ORDINARIA -->
+                                      <li><i class=" "></i><a href="#myModal_22" role="button" data-toggle="modal" style="" class="comisiones">22° SESIÓN ORDINARIA</a></li><hr>
+
+                                      <!-- Modal 22° SESIÓN ORDINARIA  -->
+                                      <div id="myModal_22" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog modal-lg">
+                                              <!-- Modal content-->
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                        VIGÉSIMA SEGUNDA SESIÓN ORDINARIA</h3>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                      <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/Orden del Dia 22º Sesión Ordinaria.pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                      <hr>
+                                                      <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/ACTA 19° SESIÓN ORDINARIA. .pdf" target="_blank" style="text-decoration:underline;">Acta Décima Novena Sesión Ordinaria</a></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/ACTA 20° SESIÓN ORDINARIA.pdf" target="_blank" style="text-decoration:underline;">Acta Vigésima Sesión Ordinaria</a></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/ACTA 21° SESIÓN ORDINARIA.pdf" target="_blank" style="text-decoration:underline;">Acta Vigésima Primera Sesión Ordinaria</a></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/ACTA 2° SESIÓN PRIVADA.pdf" target="_blank" style="text-decoration:underline;">Acta Segunda Sesión Privada</a></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/1. INFORME FINANCIERO TRIM. TESORERIA.pdf" target="_blank" style="text-decoration:underline;">Informe Financiero del Segundo Trimestre del 2019 Tesorería</a></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/2. INFORME TRIMESTRAL CMAPAS.pdf" target="_blank" style="text-decoration:underline;">Informe Trimestral CMAPAS</a></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/3. EXPEDIENTE REGIDOR ARMANDO ALONSO.pdf" target="_blank" style="text-decoration:underline;">Expediente Regidor Armando Alonso</a></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/4. INFONAVIT.pdf" target="_blank" style="text-decoration:underline;">INFONAVIT</a></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/5. DICTAMEN DERECHOS HUMANOS. CIRCULAR 105.pdf" target="_blank" style="text-decoration:underline;">Dictamen Derechos Humanos Circular 105</a></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/5.1 REUNIÓN DE TRABAJO COM. DERECHOS HUM. CIRCULAR 105.pdf" target="_blank" style="text-decoration:underline;">Reunión de Trabajo Comisión de Derechos Humanos</a></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/6. DICTAMEN COMISION DE HACIENDA Y SALUD.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión de Hacienda y Salud</a></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/7. DICT. COM. SEG. SIST. SINOPTICOS.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión Seguridad Sistamas Sinópticos</a></p>
+
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/8. DICT. COM. SEG. MACOTELA.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión Seguridad MACOTELA</a></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/9. DICT. COM. SEG. KEIBIN.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión Seguridad KEIBIN</a></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/10. DICT. COM. SEG. CIRCULAR 91.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión de Seguridad, Circular 91</a></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/11. DICT. COM. SEG. PUB. Y COM. CIRCULAR 93.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión Seguridad Pública y Comunicaciones, Circular 93</a></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/12. DICT. COM. SEG. PUB. Y COM. CIRCULAR 101.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión Seguridad Pública y Comunicaciones, Circular 101</a></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/13. DICT. COM. DES. URB. Y ORD. ECO. TOTEM CLUB DE LEONES.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión Desarrollo Urbano y Ordenamiento Ecológico Territorial Totem Club de Leones</a></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/14. DICT. COM. DES. URB. Y ORD. ECO. RANCHO LOS RAMÍREZ.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión de Desarrollo Urbano y Ordenamiento Ecológico Territorial Rancho Los Ramírez</a></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/15. DICT. COM. DES. URB. Y ORD. ECO. PERMUTA.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión de Desarrollo Urbano y Ordenamiento Ecológico Territorial Permuta</a></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/16. DICT. COM. DE GOB. CIRCULAR 88.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión de Gobierno, Circular 88</a></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/17. DICT. COM. DE GOB. CIRCULAR 89.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión de Gobierno, Circular 89</a></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/18. DICT. COM. DE GOB. CIRCULAR 92.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión de Gobierno, Circular 92</a></p>
+
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/19. DICT. COM. DE GOB. CIRCULAR 97.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión de Gobierno, Circular 97</a></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/20. DICT. COM. ATN. MIGRANTE. CIRCULAR 112.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión de Atención al Migrante, Circular 112</a></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/21. DICT. COM. ATN. MIGRANTE SR-700-2019.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión de Atención al Migrante, SR-700-2019 </a></p>
+                                                      <p><a href="sesionesA/22° Sesión Ordinaria/22. ASUNTO GENERAL.pdf" target="_blank" style="text-decoration:underline;">Asuntos Generales </a></p>
+                                                    </div><hr>
+                                                    <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/jjeTO2zF26I" data-target="#myModal_1">
+                                                      <ul class="list-inline">
+                                                      <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 22a Sesión Ordinaria
+                                                      </ul>
+                                                    </button>
+                                                    <div class="text-right">
+                                                      <span>Emisión: 21 Agosto 2019</span>
+                                                    </div><br>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Fin Modal 22° SESIÓN ORDINARIA -->
+                                      <li><i class=" "></i><a href="#myModal_21" role="button" data-toggle="modal" style="" class="comisiones">21° SESIÓN ORDINARIA</a></li><hr>
+
+                                      <!-- Modal 21° SESIÓN ORDINARIA  -->
+                                      <div id="myModal_21" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog modal-lg">
+                                              <!-- Modal content-->
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                        VIGÉSIMA PRIMERA SESIÓN ORDINARIA</h3>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                      <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                      <p><a href="sesionesA/21º  Sesión Ordinaria/Orden del Dia 21º Sesión Ordinaria.pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                      <hr>
+                                                      <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p>
+                                                      <p><a href="sesionesA/Actas de Sesiones/ACTA 19° SESIÓN ORDINARIA.pdf" target="_blank" style="text-decoration:underline;">Acta Décima Novena Sesión Ordinaria</a></p>
+                                                      <p><a href="sesionesA/Actas de Sesiones/ACTA 20° SESIÓN ORDINARIA..pdf" target="_blank" style="text-decoration:underline;">Acta Vigésima Sesión Ordinaria</a></p>
+                                                      <p><a href="sesionesA/21º  Sesión Ordinaria/INFORME TRIMESTRAL INST. MPAL. PARA LAS MUJERES.pdf" target="_blank" style="text-decoration:underline;">Informe Trimestral Instituto Municipal Para las Mujeres</a></p>
+                                                      <p><a href="sesionesA/21º  Sesión Ordinaria/INFORME TRIMESTRAL INSADIS.pdf" target="_blank" style="text-decoration:underline;">Informe Trimestral INSADIS</a></p>
+                                                      <p><a href="sesionesA/21º  Sesión Ordinaria/OF. DGDE-278-2019. PARTE I.pdf" target="_blank" style="text-decoration:underline;">Oficio DGDE 278-2019 I</a></p>
+                                                      <p><a href="sesionesA/21º  Sesión Ordinaria/OF. DGDE-278-2019. PARTE II.pdf" target="_blank" style="text-decoration:underline;">Oficio DGDE 278-2019 II</a></p>
+                                                      <p><a href="sesionesA/21º  Sesión Ordinaria/OF. DGDE-278-2019. PARTE III.pdf" target="_blank" style="text-decoration:underline;">Oficio DGDE 278-2019 III</a></p>
+                                                      <p><a href="sesionesA/21º  Sesión Ordinaria/OF. DGDE-278-2019. PARTE IV.pdf" target="_blank" style="text-decoration:underline;">Oficio DGDE 278-2019 IV</a></p>
+                                                      <p><a href="sesionesA/21º  Sesión Ordinaria/Escrito 15-julio-2019.pdf" target="_blank" style="text-decoration:underline;">Escrito 15 de Julio 2019</a></p>
+                                                      <p><a href="sesionesA/21º  Sesión Ordinaria/DICTÁMEN COM SERVICIOS PÚBLICOS MPALES..pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión Servicios Públicos Municipales</a></p>
+                                                      <p><a href="sesionesA/21º  Sesión Ordinaria/DICTM. OP OF CIRCULAR 96.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión Obras Públicas Oficio Circular 96</a></p>
+                                                      <p><a href="sesionesA/21º  Sesión Ordinaria/DICTM. OP OF CIRCULAR 107.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión Obras Públicas Oficio Circular 107</a></p>
+                                                    </div><hr>
+                                                    <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/tFEvyxXkIj0" data-target="#myModal_1">
+                                                      <ul class="list-inline">
+                                                      <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 21a Sesión Ordinaria
+                                                      </ul>
+                                                    </button>
+                                                    <div class="text-right">
+                                                      <span>Emisión: 25 Julio 2019</span>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Fin Modal 21° SESIÓN ORDINARIA -->
+                                      <li><i class=" "></i><a href="#myModal_20" role="button" data-toggle="modal" class="comisiones">20° SESIÓN ORDINARIA</a></li><hr>
+                                      <!--  -->
+                                      <!-- Modal 20° SESIÓN ORDINARIA  -->
+                                      <div id="myModal_20" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog modal-lg">
+                                              <!-- Modal content-->
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                        VIGÉSIMA SESIÓN ORDINARIA</h3>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                      <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                      <p><a href="sesionesA/20° Sesión Ordinaria/Orden del día de la Vigésima Sesión Ordinaria.pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                      <hr>
+                                                      <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p>
+                                                      <p><a href="sesionesA/Actas de Sesiones/ACTA 17° SESIÓN ORDINARIA.pdf" target="_blank" style="text-decoration:underline;">Acta Décima Séptima Sesión Ordinaria</a></p>
+                                                      <p><a href="sesionesA/Actas de Sesiones/ACTA 18° SESIÓN ORDINARIA..pdf" target="_blank" style="text-decoration:underline;">Acta Décima Octava Sesión Ordinaria</a></p>
+                                                      <p><a href="sesionesA/20° Sesión Ordinaria/DICTAMEN CIRCULAR 95.pdf" target="_blank" style="text-decoration:underline;">Dictamen Circular 95</a></p>
+                                                      <p><a href="sesionesA/20° Sesión Ordinaria/DICTAMEN COM DUOET DONAC LOCAL MERC BARAHONA.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión DUOET Donación Local Mercado Barahona</a></p>
+                                                      <p><a href="sesionesA/20° Sesión Ordinaria/DICTAMEN COM DUOET LOTES ESTAC 6A ETAPA FRACC ARBOLEDAS DE CIUDAD BAJIO.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión DUOET Estacionamiento 6a Etapa Fraccionamiento Arboledas de Ciudad Bajío</a></p>
+                                                      <p><a href="sesionesA/20° Sesión Ordinaria/INF DE RESULT AUD CMAPAS 2016 2019.pdf" target="_blank" style="text-decoration:underline;">Informe de Resultados Auditoria CMAPAS 2016-2019</a></p>
+                                                      <p><a href="sesionesA/20° Sesión Ordinaria/INFORME GRAL DICT Y ACDO ENTR RECEP 2015 2018.pdf" target="_blank" style="text-decoration:underline;">Informe General Dictamen y Acuerdo Entrega Recepción 2015-2018</a></p>
+                                                      <p><a href="sesionesA/20° Sesión Ordinaria/OFICIO Y DICT CONTRAL  AUD CMAPAS 2016 2019.pdf" target="_blank" style="text-decoration:underline;">Oficio y Dictamen Contraloría Auditoria CMAPAS 2016-2019</a></p>
+                                                    </div><hr>
+                                                    <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/RB7WJ75pdaM" data-target="#myModal_1">
+                                                      <ul class="list-inline">
+                                                      <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 20a Sesión Ordinaria
+                                                      </ul>
+                                                    </button>
+                                                    <div class="text-right">
+                                                      <span>Emisión: 03 Julio 2019</span>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Fin Modal 20° SESIÓN ORDINARIA -->
+                                      <!--  -->
+
+                                      <!--  -->
+                                      <span style="margin-top:2%; padding:0;" id="dots_ordinaria"></span>
+                                      <div class="" id="mas_ordinaria">
+                                        <li><i class=""></i><a href="#myModal_19" role="button" data-toggle="modal" class="comisiones">19° SESIÓN ORDINARIA</a></li><hr>
+                                        <!--  -->
+                                        <!-- Modal 19° SESIÓN ORDINARIA  -->
+                                        <div id="myModal_19" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                          DÉCIMA NOVENA SESIÓN ORDINARIA</h3>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                      <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                        <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                        <p><a href="sesionesA/19° Sesion Ordinaria/ORDEN DEL DÍA 19° Sesión ordinaria.pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                        <hr>
+                                                        <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p>
+                                                        <p><a href="sesionesA/19° Sesion Ordinaria/CORRESP APROBACION COLOCACION TOTEM.pdf" target="_blank" style="text-decoration:underline;">Corresp Aprobación Colocación Tótem</a></p>
+                                                        <p><a href="sesionesA/19° Sesion Ordinaria/DICTAMEN COMISION DE REGLAMENTOS.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión de Reglamentos</a></p>
+                                                        <p><a href="sesionesA/19° Sesion Ordinaria/DICTAMEN COMISION DES RURAL ECON Y TURISMO.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión Desarrollo Rural, Económico y Turismo</a></p>
+                                                      </div><hr>
+                                                      <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/5drZEbdGggg" data-target="#myModal_1">
+                                                        <ul class="list-inline">
+                                                        <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 19a Sesión Ordinaria
+                                                        </ul>
+                                                      </button>
+                                                      <div class="text-right">
+                                                        <span>Emisión: 26 Junio 2019</span>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Fin Modal 19° SESIÓN ORDINARIA -->
+                                      <li><i class=""></i><a href="#myModal_18" role="button" data-toggle="modal" class="comisiones">18° SESIÓN ORDINARIA</a></li><hr style=" padding:0;">
+                                      <!--  -->
+                                      <!-- Modal 18° SESIÓN ORDINARIA  -->
+                                      <div id="myModal_18" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog modal-lg">
+                                              <!-- Modal content-->
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                        DÉCIMA OCTAVA SESIÓN ORDINARIA</h3>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                      <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                      <p><a href="sesionesA/20° Sesión Ordinaria/Orden del día de la Vigésima Sesión Ordinaria.pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                      <hr>
+                                                      <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p>
+                                                      <p><a href="sesionesA/Actas de Sesiones/ACTA 16° SESIÓN ORDINARIA.pdf" target="_blank" style="text-decoration:underline;">Acta Décima Sexta Sesión Ordinaria</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/DICTAMEN APOY ECON CRUZ ROJA COM HDA PAT CTA PUB.pdf" target="_blank" style="text-decoration:underline;">Dictamen Apoyo Econ Cruz Roja Comisión de Hacienda, Patrimonio y Cuenta Pública</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/DICTAMEN APOYO ESTANCIAS INF COM AS SOC Y SALUD.pdf" target="_blank" style="text-decoration:underline;">Dictamen Apoyo Estancias Infantiles Com As Soc y Salud</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/DICTAMEN BASES CONSULTA PUBLICA LAS PALAPAS COM DUOET.pdf" target="_blank" style="text-decoration:underline;">Dictamen Bases Consulta Pública Las Palapas Com Duoet</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/DICTAMEN BASES CONSULTA PUBLICA VILLAS DEL CAMPO COM DUOET.pdf" target="_blank" style="text-decoration:underline;">Dictamen Bases Consulta Pública Villas Del Campo Com Duoet</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/DICTAMEN CONF MPAL EMPR EULEN COM SEG.pdf" target="_blank" style="text-decoration:underline;">Dictamen Conf Mpal Empr Eulen Com Seg</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/DICTAMEN CONF MPAL GRUPO MAYA COM SEG PUB.pdf" target="_blank" style="text-decoration:underline;">Dictamen Conf Mpal Grupo Maya Com Seg Pub</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/DICTAMEN DONAC PRED JERICO MOD DIST DE RIEGO 11 COM DUOET.pdf" target="_blank" style="text-decoration:underline;">Dictamen Donación Del Predio Jerico Mod Dist de Riego 11 Com Duote</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/DICTAMEN INCORP IMSS INSADIS COM HDA PAT Y CTA PUB.pdf" target="_blank" style="text-decoration:underline;">Dictamen Incorp IMSS INSADIS Comisión de Hacienda, Patrimonio y Cuenta Pública</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/DICTAMEN OF CIR 81 COM HDA PAT CTA PUB COM AGUA POT.pdf" target="_blank" style="text-decoration:underline;">Dictamen Oficio Circular 81 Comisión de Hacienda, Patrimonio y Cuenta Pública Comisión de Agua Potable</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/DICTAMEN OF CIR 84 COM SALUD Y ASIST SOC.pdf" target="_blank" style="text-decoration:underline;">Dictamen Oficio Circular 84 Comisión Salud y Asistencia Social</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/DICTAMEN OF CIRC 57 COM DUOET.pdf" target="_blank" style="text-decoration:underline;">Dictamen Oficio Circular 57 Com Duoet</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/DICTAMEN OF CIRC 79 COM HDA PAT Y CTA PUB.pdf" target="_blank" style="text-decoration:underline;">Dictamen Oficio Circular 79 Comisión de Hacienda, Patrimonio y Cuenta Pública</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/DICTAMEN OF CIRC 80 COM OB PUB Y COM REGL.pdf" target="_blank" style="text-decoration:underline;">Dictamen Oficio Circular 80 Comisión de Obras Públicas y Reglamentos</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/DICTAMEN PERMISO DE VENTA 6TA ETAPA FRACC ARBOLEDAS COM DUOET.pdf" target="_blank" style="text-decoration:underline;">Dictamen Permiso de Venta 6ta Etapa Fraccionamiento Arboledas Com Duoet</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/DICTAMEN USO DE SUELO EL RECUERDO COM DUOET.pdf" target="_blank" style="text-decoration:underline;">Dictamen Uso de Suelo el Recuerdo Com Duoet</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/DICTAMEN USO DE SUELO LA ORDEÑA COM DUOET.pdf" target="_blank" style="text-decoration:underline;">Dictamen Uso de Suelo la Ordeña Com Duoet</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/DISPOSICION ADMINISTRATIVA.pdf" target="_blank" style="text-decoration:underline;">Disposición Administrativa</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/DISPOSICIONES DE RACIONALIDAD 2019.pdf" target="_blank" style="text-decoration:underline;">Disposiciones de Racionalidad 2019</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/DONACION PREDIO GUARDIA NACIONAL.pdf" target="_blank" style="text-decoration:underline;">Donación Predio Guardia Nacional</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/INF BIM MARZO ABRIL  2019 CONTRALORIA.pdf" target="_blank" style="text-decoration:underline;">Informe Bimestral Marzo - Abril 2019 Contraloría</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/INF RESULT REV CTA PUB 2017 1.pdf" target="_blank" style="text-decoration:underline;">Informe de Resultados Revisión de Cuenta Pública 2017-1</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/INF RESULT REV CTA PUB 2017 2.pdf" target="_blank" style="text-decoration:underline;">Informe de Resultados Revisión de Cuenta Pública 2017-2</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/INF RESULT REV CTA PUB 2017 3.pdf" target="_blank" style="text-decoration:underline;">Informe de Resultados Revisión de Cuenta Pública 2017-3</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/INF RESULT REV CTA PUB 2017 4.pdf" target="_blank" style="text-decoration:underline;">Informe de Resultados Revisión de Cuenta Pública 2017-4</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/INF RESULT REV CTA PUB 2017 5.pdf" target="_blank" style="text-decoration:underline;">Informe de Resultados Revisión de Cuenta Pública 2017-5</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/INF RESULT REV CTA PUB 2017 6.pdf" target="_blank" style="text-decoration:underline;">Informe de Resultados Revisión de Cuenta Pública 2017-6</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/INF RESULT REV CTA PUB 2017 7.pdf" target="_blank" style="text-decoration:underline;">Informe de Resultados Revisión de Cuenta Pública 2017-7</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/MODIF DISP ADMVAS DE REC 2019.pdf" target="_blank" style="text-decoration:underline;">Modificaciones a las Disposiciones Administrativas de Recaudación 2019</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/MODIF PRESUP SEG PUB.pdf" target="_blank" style="text-decoration:underline;">Modificación Presupuesto Seguridad Pública</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/OFIC 3323 INF RESULT ACDO Y DICT CONGRESO REV CTA PUB 2017.pdf" target="_blank" style="text-decoration:underline;">Oficio 3323 Informe Resultados Acdo y Dict Congreso Rev Cuenta Pública 2017</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/OFICIO 259 IMSM MODIF PRESUP 2019.pdf" target="_blank" style="text-decoration:underline;">Oficio 259 IMSM Modificación Presupuesto 2019</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/OFICIO 2783 INF DE RESULT ENE DIC 2017.pdf" target="_blank" style="text-decoration:underline;">Oficio 2783 Informe de Resultados Enero - Diciembre 2017</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/OFICIO SN ALEGRA CASA HOGAR COND IMP PREDIAL.pdf" target="_blank" style="text-decoration:underline;">Oficio SN Alegra Casa Hogar Condonación Impuesto Predial</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/OFICIO SN ANGEL GERARDO VEGA LAGUNA.pdf" target="_blank" style="text-decoration:underline;">Oficio SN Ángel Gerardo Vega Laguna</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/OFICIO SN REG KARINA CARDENAS.pdf" target="_blank" style="text-decoration:underline;">Oficio SN Reg. Karina Cárdenas</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/OFICIO SR 500 2019 COMISION DUOET.pdf" target="_blank" style="text-decoration:underline;">Oficio SR 500 2019 Comisión Duoet</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/OFICIO TESORERIA 2DA MODIF PRESUP 2019.pdf" target="_blank" style="text-decoration:underline;">Oficio Tesorería 2da Modificación Presupuesto 2019</a></p>
+                                                      <p><a href="sesionesA/18° Sesión Ordinaria/PROG CONECTANDO MI CAMINO RURAL.pdf" target="_blank" style="text-decoration:underline;">Programa Conectando Mi Camino Rural</a></p>
+                                                    </div><hr>
+                                                    <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/-LEmaA39ufo" data-target="#myModal_1">
+                                                      <ul class="list-inline">
+                                                      <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 18a Sesión Ordinaria
+                                                      </ul>
+                                                    </button>
+                                                    <div class="text-right">
+                                                      <span>Emisión: 12 Junio 2019</span>
+                                                    </div><br>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Fin Modal 18° SESIÓN ORDINARIA -->
+                                      <!--  -->
+
+                                      <li><i class=""></i><a href="#myModal_17" role="button" data-toggle="modal" class="comisiones">17° SESIÓN ORDINARIA</a></li><hr>
+                                      <!--  -->
+                                      <!-- Modal 17° SESIÓN ORDINARIA  -->
+                                      <div id="myModal_17" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog modal-lg">
+                                              <!-- Modal content-->
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                        DÉCIMA SÉPTIMA SESIÓN ORDINARIA</h3>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                      <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                      <p><a href="sesionesA/17° Sesión Ordinaria/Orden del día de la 17° Sesión Ordinaria.pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                      <hr>
+                                                      <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p>
+                                                      <p><a href="sesionesA/Actas de Sesiones/ACTA 16° SESIÓN ORDINARIA.pdf" target="_blank" style="text-decoration:underline;">Acta Décima Sexta Sesión Ordinaria</a></p>
+                                                     <p><a href="sesionesA/17° Sesión Ordinaria/DICTAMEN APOY ECON CRUZ ROJA COM HDA PAT CTA PUB.pdf" target="_blank" style="text-decoration:underline;">Dictamen Apoyo Econ Cruz Roja Comisión de Hacienda, Patrimonio y Cuenta Pública</a></p>
+                                                     <p><a href="sesionesA/17° Sesión Ordinaria/DICTAMEN APOYO ESTANCIAS INF COM AS SOC Y SALUD.pdf" target="_blank" style="text-decoration:underline;">Dictamen Apoyo Estancias Infantiles Com As Soc y Salud</a></p>
+                                                     <p><a href="sesionesA/17° Sesión Ordinaria/DICTAMEN BASES CONSULTA PUBLICA LAS PALAPAS COM DUOET.pdf" target="_blank" style="text-decoration:underline;">Dictamen Bases Consulta Pública Las Palapas Com Duoet</a></p>
+                                                     <p><a href="sesionesA/17° Sesión Ordinaria/DICTAMEN BASES CONSULTA PUBLICA VILLAS DEL CAMPO COM DUOET.pdf" target="_blank" style="text-decoration:underline;">Dictamen Bases Consulta Pública Villas Del Campo Com Duoet</a></p>
+                                                     <p><a href="sesionesA/17° Sesión Ordinaria/DICTAMEN CONF MPAL EMPR EULEN COM SEG.pdf" target="_blank" style="text-decoration:underline;">Dictamen Conf Mpal Empr Eulen Com Seg</a></p>
+                                                     <p><a href="sesionesA/17° Sesión Ordinaria/DICTAMEN CONF MPAL GRUPO MAYA COM SEG PUB.pdf" target="_blank" style="text-decoration:underline;">Dictamen Conf Mpal Grupo Maya Com Seg Pub</a></p>
+                                                     <p><a href="sesionesA/17° Sesión Ordinaria/DICTAMEN DONAC PRED JERICO MOD DIST DE RIEGO 11 COM DUOET.pdf" target="_blank" style="text-decoration:underline;">Dictamen Donación Del Predio Jerico Mod Dist de Riego 11 Com Duote</a></p>
+                                                     <p><a href="sesionesA/17° Sesión Ordinaria/DICTAMEN INCORP IMSS INSADIS COM HDA PAT Y CTA PUB.pdf" target="_blank" style="text-decoration:underline;">Dictamen Incorp IMSS INSADIS Comisión de Hacienda, Patrimonio y Cuenta Pública</a></p>
+                                                     <p><a href="sesionesA/17° Sesión Ordinaria/DICTAMEN OF CIR 81 COM HDA PAT CTA PUB COM AGUA POT.pdf" target="_blank" style="text-decoration:underline;">Dictamen Oficio Circular 81 Comisión de Hacienda, Patrimonio y Cuenta Pública Comisión de Agua Potable</a></p>
+                                                     <p><a href="sesionesA/17° Sesión Ordinaria/DICTAMEN OF CIRC 57 COM DUOET.pdf" target="_blank" style="text-decoration:underline;">Dictamen Oficio Circular 57 Com Duoet</a></p>
+                                                     <p><a href="sesionesA/17° Sesión Ordinaria/DICTAMEN OF CIRC 79 COM HDA PAT Y CTA PUB.pdf" target="_blank" style="text-decoration:underline;">Dictamen Oficio Circular 79 Comisión de Hacienda, Patrimonio y Cuenta Pública</a></p>
+                                                     <p><a href="sesionesA/17° Sesión Ordinaria/DICTAMEN OF CIRC 80 COM OB PUB Y COM REGL.pdf" target="_blank" style="text-decoration:underline;">Dictamen Oficio Circular 80 Comisión de Obras Públicas y Reglamentos</a></p>
+                                                     <p><a href="sesionesA/17° Sesión Ordinaria/DICTAMEN PERMISO DE VENTA 6TA ETAPA FRACC ARBOLEDAS COM DUOET.pdf" target="_blank" style="text-decoration:underline;">Dictamen Permiso de Venta 6ta Etapa Fraccionamiento Arboledas Com Duoet</a></p>
+                                                     <p><a href="sesionesA/17° Sesión Ordinaria/DICTAMEN USO DE SUELO EL RECUERDO COM DUOET.pdf" target="_blank" style="text-decoration:underline;">Dictamen Uso de Suelo el Recuerdo Com Duoet</a></p>
+                                                     <p><a href="sesionesA/17° Sesión Ordinaria/DICTAMEN USO DE SUELO LA ORDEÑA COM DUOET.pdf" target="_blank" style="text-decoration:underline;">Dictamen Uso de Suelo la Ordeña Com Duoet</a></p>
+                                                     <p><a href="sesionesA/17° Sesión Ordinaria/DISPOSICION ADMINISTRATIVA.pdf" target="_blank" style="text-decoration:underline;">Disposición Administrativa</a></p>
+                                                     <p><a href="sesionesA/17° Sesión Ordinaria/DISPOSICIONES DE RACIONALIDAD 2019.pdf" target="_blank" style="text-decoration:underline;">Disposiciones de Racionalidad 2019</a></p>
+                                                     <p><a href="sesionesA/17° Sesión Ordinaria/OFICIO 259 IMSM MODIF PRESUP 2019.pdf" target="_blank" style="text-decoration:underline;">Oficio 259 IMSM Presupuesto 2019</a></p>
+                                                     <p><a href="sesionesA/17° Sesión Ordinaria/OFICIO 2783 INF DE RESULT ENE DIC 2017.pdf" target="_blank" style="text-decoration:underline;">Oficio 2783 Informe de Resultados Enero-Diciembre 2017</a></p>
+                                                     <p><a href="sesionesA/17° Sesión Ordinaria/OFICIO SR 500 2019 COMISION DUOET.pdf" target="_blank" style="text-decoration:underline;">Oficio SR 500 2019 Comisión Duoet</a></p>
+                                                     <p><a href="sesionesA/17° Sesión Ordinaria/PROG CONECTANDO MI CAMINO RURAL.pdf" target="_blank" style="text-decoration:underline;">Programa Conectando Mi Camino Rural</a></p>
+                                                    </div><hr>
+                                                    <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/y0a1acadAT0" data-target="#myModal_1">
+                                                      <ul class="list-inline">
+                                                      <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 17a Sesión Ordinaria
+                                                      </ul>
+                                                    </button>
+                                                    <div class="text-right">
+                                                      <span>Emisión: 31 Mayo 2019</span>
+                                                    </div><br>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Fin Modal 17° SESIÓN ORDINARIA -->
+                                      <!--  -->
+                                      <li><i class=""></i><a href="#myModal_16" role="button" data-toggle="modal" class="comisiones">16° SESIÓN ORDINARIA</a></li><hr>
+                                      <!-- Modal 16° SESIÓN ORDINARIA  -->
+                                      <div id="myModal_16" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog modal-lg">
+                                              <!-- Modal content-->
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                        DÉCIMA SEXTA SESIÓN ORDINARIA</h3>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                      <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                      <p><a href="sesionesA/16 Sesión Ordinaria/Orden del día de la 16° Sesión Ordinaria.pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                      <hr>
+                                                      <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p>
+                                                      <p><a href="sesionesA/Actas de Sesiones/ACTA 15° SESION ORDINARIA.pdf" target="_blank" style="text-decoration:underline;">Acta Décima Quinta Sesión Ordinaria</a></p>
+                                                      <p><a href="sesionesA/16 Sesión Ordinaria/GUIA CONSULTIVA DE DESEMPEÑO MUNICIPAL.pdf" target="_blank" style="text-decoration:underline;">Guía Consultiva de Desempeño Municipal</a></p>
+                                                      <p><a href="sesionesA/16 Sesión Ordinaria/INFORME DE RESULTADOS REVISION CUENTA PUBLICA EJERCICIO FISCAL 2016.pdf" target="_blank" style="text-decoration:underline;">Informe de Resultados Revisión Cuenta Pública Ejercicio Fiscal 2016</a></p>
+                                                      <p><a href="sesionesA/16 Sesión Ordinaria/INFORME DE RESULTADOS REVISION CUENTA PUBLICA JULIO A DICIEMBRE 2015.pdf" target="_blank" style="text-decoration:underline;">Informe de Resultados Revisión Cuenta Pública Julio a Diciembre 2015</a></p>
+                                                      <p><a href="sesionesA/16 Sesión Ordinaria/INFORME TRIMESTRAL ENE-MAR 2019 CMAPAS.pdf" target="_blank" style="text-decoration:underline;">Informe Trimestral Ene-Mar 2019 CMAPAS</a></p>
+                                                      <p><a href="sesionesA/16 Sesión Ordinaria/OFICIO CAISES APOYO 2DA SEM NAL DE SALUD.pdf" target="_blank" style="text-decoration:underline;">Oficio CAISES Apoyo 2da Semana Nacional de Salud</a></p>
+                                                      <p><a href="sesionesA/16 Sesión Ordinaria/OFICIO TESORERIA 682 2019.pdf" target="_blank" style="text-decoration:underline;">Oficio Tesorería 682 2019</a></p>
+                                                      <p><a href="sesionesA/16 Sesión Ordinaria/OFICIO TESORERIA 683 2019 INF FIN 1ER TRIM 2019 ASEG.pdf" target="_blank" style="text-decoration:underline;">Oficio Tesorería 683 2019 Inf. Fin. 1er Trimestre 2019 ASEG</a></p>
+                                                      <p><a href="sesionesA/16 Sesión Ordinaria/OFICIO TESORERIA APOYO CRUZ ROJA.pdf" target="_blank" style="text-decoration:underline;">Oficio Tesorería Apoyo Cruz Roja</a></p>
+                                                      <p><a href="sesionesA/16 Sesión Ordinaria/PUNTO DE ACUERDO DEL CABILDO PARA PARTICIPAR EN LA GDM.pdf" target="_blank" style="text-decoration:underline;">Punto de Acuerdo del Cabildo para Participar en la GDM</a></p>
+                                                      <p><a href="sesionesA/16 Sesión Ordinaria/SOLIC DES SOC INCREM PROG MI COLONIA A COLOR.pdf" target="_blank" style="text-decoration:underline;">Solicitud Desarrollo Social Increm. Programa Mi Colonia a Color</a></p>
+                                                      <p><a href="sesionesA/16 Sesión Ordinaria/SOLIC MEDIO AMB APROB CONV INTEGR CONSEJO CONSULTIVO AMBIENTAL.pdf" target="_blank" style="text-decoration:underline;">Solicitud Medio Ambiente Aprobación Conv. Integral Consejo Consultivo Ambiental</a></p>
+                                                    </div><hr>
+                                                    <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/AuKKf4a_R-E" data-target="#myModal_1">
+                                                      <ul class="list-inline">
+                                                      <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 16a Sesión Ordinaria
+                                                      </ul>
+                                                    </button>
+                                                    <div class="text-right">
+                                                      <span>Emisión: 15 Mayo 2019</span>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Fin Modal 16° SESIÓN ORDINARIA -->
+                                      <li><i class=""></i><a href="#myModal_15" role="button" data-toggle="modal" class="comisiones">15° SESIÓN ORDINARIA</a></li><hr>
+                                      <!-- Modal 15° SESIÓN ORDINARIA  -->
+                                      <div id="myModal_15" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog modal-lg">
+                                              <!-- Modal content-->
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                        DÉCIMA QUINTA SESIÓN ORDINARIA</h3>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                      <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                      <p><a href="sesionesA/15 Sesión Ordinaria/Orden del Dia.pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                      <hr>
+                                                      <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p>
+                                                      <p><a href="sesionesA/Actas de Sesiones/ACTA 14° SESION ORDINARIA.pdf" target="_blank" style="text-decoration:underline;">Acta Décima Cuarta Sesión Ordinaria</a></p>
+                                                      <p><a href="sesionesA/15 Sesión Ordinaria/INFORME TRIMESTRAL IMSM.pdf" target="_blank" style="text-decoration:underline;">Informe Trimestral IMSM</a></p>
+                                                    </div><hr>
+                                                    <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/uPedd3AJk84" data-target="#myModal_1">
+                                                      <ul class="list-inline">
+                                                      <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 15a Sesión Ordinaria
+                                                      </ul>
+                                                    </button>
+                                                    <div class="text-right">
+                                                      <span>Emisión: 29 Abril 2019</span>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Fin Modal 15° SESIÓN ORDINARIA -->
+                                      <li><i class=""></i><a href="#myModal_14" role="button" data-toggle="modal" class="comisiones">14° SESIÓN ORDINARIA</a></li><hr>
+                                      <!-- Modal 14° SESIÓN ORDINARIA  -->
+                                      <div id="myModal_14" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog modal-lg">
+                                              <!-- Modal content-->
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                        DÉCIMA CUARTA SESIÓN ORDINARIA</h3>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                      <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                      <p><a href="sesionesA/14 Sesión Ordinaria/Orden del Dia.pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                      <hr>
+                                                      <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p>
+                                                      <p><a href="sesionesA/Actas de Sesiones/ACTA 13° SESION ORDINARIA.pdf" target="_blank" style="text-decoration:underline;">Acta Décima Tercera Sesión Ordinaria</a></p>
+                                                      <p><a href="sesionesA/14 Sesión Ordinaria/1.- Informe Contraloría.pdf" target="_blank" style="text-decoration:underline;">Informe Contraloría</a></p>
+                                                      <p><a href="sesionesA/14 Sesión Ordinaria/2.- Informe INSADIS.pdf" target="_blank" style="text-decoration:underline;">Informe INSADIS</a></p>
+                                                      <p><a href="sesionesA/14 Sesión Ordinaria/3.- Quinta Modificación Presupuestal 2018.pdf" target="_blank" style="text-decoration:underline;">Quinta Modificación Presupuestal 2018</a></p>
+                                                      <p><a href="sesionesA/14 Sesión Ordinaria/4.- Primera Modificación Presupuestal 2019.pdf" target="_blank" style="text-decoration:underline;">Primera Modificación Presupuestal 2019</a></p>
+                                                      <p><a href="sesionesA/14 Sesión Ordinaria/5.- Reclasificación Presupuesto CMAPAS.pdf" target="_blank" style="text-decoration:underline;">Reclasificación Presupuesto CMAPAS</a></p>
+                                                      <p><a href="sesionesA/14 Sesión Ordinaria/6.- Personal Fiestas Primavera 2019.pdf" target="_blank" style="text-decoration:underline;">Personal Fiestas Primavera 2019</a></p>
+                                                      <p><a href="sesionesA/14 Sesión Ordinaria/7.- Prima de Riesgo.pdf" target="_blank" style="text-decoration:underline;">Prima de Riesgo</a></p>
+                                                      <p><a href="sesionesA/14 Sesión Ordinaria/8.- Solicitud INSADIS.pdf" target="_blank" style="text-decoration:underline;">Solicitud INSADIS</a></p>
+                                                      <p><a href="sesionesA/14 Sesión Ordinaria/9.- Placas Nomenclatura S. Vicente.pdf" target="_blank" style="text-decoration:underline;">Placas Nomenclatura S. Vicente</a></p>
+                                                      <p><a href="sesionesA/14 Sesión Ordinaria/10.- Permiso Venta 6° Etapa Arboledas.pdf" target="_blank" style="text-decoration:underline;">Permiso Venta 6° Etapa Arboledas </a></p>
+                                                      <p><a href="sesionesA/14 Sesión Ordinaria/11.- Circular N° 57.pdf" target="_blank" style="text-decoration:underline;">Circular N° 57</a></p>
+                                                      <p><a href="sesionesA/14 Sesión Ordinaria/12.- Circular N° 59.pdf" target="_blank" style="text-decoration:underline;">Circular N° 59</a></p>
+                                                      <p><a href="sesionesA/14 Sesión Ordinaria/13. Circular N° 60.pdf" target="_blank" style="text-decoration:underline;">Circular N° 60</a></p>
+                                                      <p><a href="sesionesA/14 Sesión Ordinaria/14.- Exhorto Congreso.pdf" target="_blank" style="text-decoration:underline;">Exhorto Congreso</a></p>
+                                                      <p><a href="sesionesA/14 Sesión Ordinaria/15.- Dictamenes Comisión Seguridad.pdf" target="_blank" style="text-decoration:underline;">Dictamenes Comisión Seguridad</a></p>
+                                                      <p><a href="sesionesA/14 Sesión Ordinaria/16.- Dictamen Comisión Desarrollo Social.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión Desarrollo Social</a></p>
+                                                      <p><a href="sesionesA/14 Sesión Ordinaria/17.- Dictamen Comisión Reglamentos.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión Reglamentos</a></p>
+                                                      <p><a href="sesionesA/14 Sesión Ordinaria/18.- Dictamen Comisión Desarrollo Urbano.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión Desarrollo Urbano</a></p>
+                                                    </div><hr>
+                                                    <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/Wz5UEZPl3eE" data-target="#myModal_1">
+                                                      <ul class="list-inline">
+                                                      <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 14a Sesión Ordinaria
+                                                      </ul>
+                                                    </button>
+                                                    <div class="text-right">
+                                                      <span>Emisión: 12 Abril 2019</span>
+                                                    </div><br>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Fin Modal 14° SESIÓN ORDINARIA -->
+                                      <li><i class=""></i><a href="#myModal_13" role="button" data-toggle="modal" class="comisiones">13° SESIÓN ORDINARIA</a></li><hr>
+                                      <!-- Modal 13° SESIÓN ORDINARIA  -->
+                                      <div id="myModal_13" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog modal-lg">
+                                              <!-- Modal content-->
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                        DÉCIMA TERCERA SESIÓN ORDINARIA</h3>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                      <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                      <p><a href="sesionesA/13 Sesión Ordinaria/Orden del Dia.pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                      <hr>
+                                                      <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p>
+                                                      <p><a href="sesionesA/Actas de Sesiones/ACTA 12° SESION ORDINARIA.pdf" target="_blank" style="text-decoration:underline;">Acta Décima Segunda Sesión Ordinaria</a></p>
+                                                      <p><a href="sesionesA/13 Sesión Ordinaria/1. Informacion Financiera 4° Trimestre.pdf" target="_blank" style="text-decoration:underline;">Información financiera 4 Trimestre</a></p>
+                                                      <p><a href="sesionesA/13 Sesión Ordinaria/2. Cuenta Pública Municipal 2018.pdf" target="_blank" style="text-decoration:underline;">Cuenta pública Municipal 2018</a></p>
+                                                      <p><a href="sesionesA/13 Sesión Ordinaria/3. Oficio Módulo de Riego.pdf" target="_blank" style="text-decoration:underline;">Oficio módulo de riego</a></p>
+                                                    </div><hr>
+                                                    <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/HtgmlIb9UwE" data-target="#myModal_1">
+                                                      <ul class="list-inline">
+                                                      <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 13a Sesión Ordinaria
+                                                      </ul>
+                                                    </button>
+                                                    <div class="text-right">
+                                                      <span>Emisión: 28 Marzo 2019</span>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Fin Modal 13° SESIÓN ORDINARIA -->
+                                      <li><i class=""></i><a href="#myModal_12" role="button" data-toggle="modal" class="comisiones">12° SESIÓN ORDINARIA</a></li><hr>
+                                      <!-- Modal 12° SESIÓN ORDINARIA  -->
+                                      <div id="myModal_12" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog modal-lg">
+                                              <!-- Modal content-->
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                        DÉCIMA SEGUNDA SESIÓN ORDINARIA</h3>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                      <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                      <p><a href="sesionesA/12 Sesión Ordinaria/ORDEN DEL DÍA.pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                      <hr>
+                                                      <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p>
+                                                      <p><a href="sesionesA/12 Sesión Ordinaria/1. COMISIÓN MIXTA TARIFARIA.pdf" target="_blank" style="text-decoration:underline;">Comisión mixta tarifaria</a></p>
+                                                      <p><a href="sesionesA/12 Sesión Ordinaria/2. MI COLONIA A COLOR.pdf" target="_blank" style="text-decoration:underline;">Mi colonia a color</a></p>
+                                                      <p><a href="sesionesA/12 Sesión Ordinaria/3. MODIFICACION  A LAS DISPOSICIONES.pdf" target="_blank" style="text-decoration:underline;">Modificación a las disposiciones</a></p>
+                                                      <p><a href="sesionesA/12 Sesión Ordinaria/4. PRÓRROGA DELEGADOS.pdf" target="_blank" style="text-decoration:underline;">Prorroga delegados</a></p>
+                                                      <p><a href="sesionesA/12 Sesión Ordinaria/5. CIRCULAR 51.pdf" target="_blank" style="text-decoration:underline;">Circular 51</a></p>
+                                                      <p><a href="sesionesA/12 Sesión Ordinaria/6. CONSULTA LAS PALAPAS.pdf" target="_blank" style="text-decoration:underline;">Consulta las palapas</a></p>
+                                                      <p><a href="sesionesA/12 Sesión Ordinaria/7. CONSULTA VILLAS DEL CAMPO.pdf" target="_blank" style="text-decoration:underline;">Consulta villas del campo</a></p>
+                                                      <p><a href="sesionesA/12 Sesión Ordinaria/8. CAMBIO DE CLASIFICACION DE BIENES.pdf" target="_blank" style="text-decoration:underline;">Cambio de clasificación de bienes</a></p>
+                                                      <p><a href="sesionesA/12 Sesión Ordinaria/9. DICTAMEN COMISION DE EDUCACIÓN.pdf" target="_blank" style="text-decoration:underline;">Dictamen comisión de educación </a></p>
+                                                      <p><a href="sesionesA/12 Sesión Ordinaria/10. DICTAMEN DE COMISIONES UNIDAS.pdf" target="_blank" style="text-decoration:underline;">Dictamen de comisiones unidas</a></p>
+                                                      </div><hr>
+                                                    <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/BgWKxmVLUR4" data-target="#myModal_1">
+                                                      <ul class="list-inline">
+                                                        <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 12a Sesión Ordinaria
+                                                      </ul>
+                                                    </button><br><br>
+                                                    <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/Uj92F9mZQnk" data-target="#myModal_1">
+                                                      <ul class="list-inline">
+                                                        <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 12a Sesión Ordinaria (continuación)
+                                                      </ul>
+                                                    </button>
+                                                    <div class="text-right">
+                                                      <span>Emisión: 14 y 15 Marzo 2019</span>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Fin Modal 12° SESIÓN ORDINARIA -->
+                                      <li><i class=""></i><a href="#myModal_11" role="button" data-toggle="modal" class="comisiones">11° SESIÓN ORDINARIA</a></li><hr>
+                                      <!-- Modal 11° SESIÓN ORDINARIA  -->
+                                      <div id="myModal_11" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog modal-lg">
+                                              <!-- Modal content-->
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                        DÉCIMA PRIMERA SESIÓN ORDINARIA</h3>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                      <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                      <p><a href="sesionesA/11 Sesión Ordinaria/Orden del Dia 11° Sesión Ordinaria..pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                      <hr>
+                                                      <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p>
+                                                      <p><a href="sesionesA/11 Sesión Ordinaria/11 SESION ORDINARIA.pdf" target="_blank" style="text-decoration:underline;">11 Sesión Ordinaria</a></p>
+                                                      </div><hr>
+                                                    <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/NoYWwerCojU" data-target="#myModal_1">
+                                                      <ul class="list-inline">
+                                                      <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 11a Sesión Ordinaria
+                                                      </ul>
+                                                    </button>
+                                                    <div class="text-right">
+                                                      <span>Emisión: 28 Febrero 2019</span>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Fin Modal 11° SESIÓN ORDINARIA -->
+                                      <li><i class=""></i><a href="#myModal_10" role="button" data-toggle="modal" class="comisiones">10° SESIÓN ORDINARIA</a></li><hr>
+                                      <!-- Modal 10° SESIÓN ORDINARIA  -->
+                                      <div id="myModal_10" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog modal-lg">
+                                              <!-- Modal content-->
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                        DÉCIMA SESIÓN ORDINARIA</h3>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                      <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                      <p><a href="sesionesA/10 Sesión Ordinaria/Orden del Dia 10° Sesión Ordinaria..pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                      <hr>
+                                                      <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p>
+                                                      <p><a href="sesionesA/Actas de Sesiones/ACTA 9° SESION ORDINARIA.pdf" target="_blank" style="text-decoration:underline;">Acta Novena Sesión Ordinaria</a></p>
+                                                      <p><a href="sesionesA/10 Sesión Ordinaria/10 SESION ORDINARIA I 07032019.pdf" target="_blank" style="text-decoration:underline;">10 Sesión Ordinaria I07032019</a></p>
+                                                      <p><a href="sesionesA/10 Sesión Ordinaria/10 SESION ORDINARIA II07032019.pdf" target="_blank" style="text-decoration:underline;">10 Sesión Ordinaria II07032019</a></p>
+                                                      <p><a href="sesionesA/10 Sesión Ordinaria/10 SESION ORDINARIA III07032019.pdf" target="_blank" style="text-decoration:underline;">10 Sesión Ordinaria III07032019</a></p>
+                                                      </div><hr>
+                                                    <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/cb9uSBBTQyk" data-target="#myModal_1">
+                                                      <ul class="list-inline">
+                                                      <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 10a Sesión Ordinaria
+                                                      </ul>
+                                                    </button>
+                                                    <div class="text-right">
+                                                      <span>Emisión: 28 Febrero 2019</span>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Fin Modal 10° SESIÓN ORDINARIA -->
+                                      <li><i class=""></i><a href="#myModal_9" role="button" data-toggle="modal" class="comisiones">9° SESIÓN ORDINARIA</a></li><hr>
+
+                                      <!-- Modal 9° SESIÓN ORDINARIA  -->
+                                      <div id="myModal_9" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog modal-lg">
+                                              <!-- Modal content-->
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                        NOVENA SESIÓN ORDINARIA</h3>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                      <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                      <p><a href="sesionesA/9 Sesión Ordinaria/Orden del Dia 9° Sesión Ordinaria..pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                      <hr>
+                                                      <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p>
+                                                      <p><a href="sesionesA/Actas de Sesiones/ACTA 8° SESION ORDINARIA.pdf" target="_blank" style="text-decoration:underline;">Acta Octava Sesión Ordinaria</a></p>
+                                                      <p><a href="sesionesA/9 Sesión Ordinaria/NOVENA SESIÓN ORDINARIA.pdf" target="_blank" style="text-decoration:underline;">9 Sesión Ordinaria</a></p>
+                                                      </div><hr>
+                                                    <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/FnSJg8WHUL4" data-target="#myModal_1">
+                                                      <ul class="list-inline">
+                                                      <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 9a Sesión Ordinaria
+                                                      </ul>
+                                                    </button>
+                                                    <div class="text-right">
+                                                      <span>Emisión: 09 Febrero 2019</span>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Fin Modal 9° SESIÓN ORDINARIA -->
+                                      <li><i class=""></i><a href="#myModal_8" role="button" data-toggle="modal" class="comisiones">8° SESIÓN ORDINARIA</a></li><hr>
+                                      <!-- Modal 8° SESIÓN ORDINARIA  -->
+                                      <div id="myModal_8" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog modal-lg">
+                                              <!-- Modal content-->
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                        OCTAVA SESIÓN ORDINARIA</h3>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                      <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                      <p><a href="sesionesA/8 Sesión Ordinaria/Orden del Dia 8° Sesión Ordinaria..pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                      <hr>
+                                                      <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p>
+                                                      <p><a href="sesionesA/Actas de Sesiones/ACTA 7° SESION ORDINARIA.pdf" target="_blank" style="text-decoration:underline;">Acta Séptima Sesión Ordinaria</a></p>
+                                                      <p><a href="sesionesA/8 Sesión Ordinaria/1. CONVOCATORIA JUEZ MUNICIPAL 2018-2021.pdf" target="_blank" style="text-decoration:underline;">Convocatoria Juez Municipal 2018-2021</a></p>
+                                                      <p><a href="sesionesA/8 Sesión Ordinaria/2. Convocatoria Delegados 2018-2021.pdf" target="_blank" style="text-decoration:underline;">Convocatoria Delegados 2018-2021</a></p>
+                                                      <p><a href="sesionesA/8 Sesión Ordinaria/3. Curriculo Ing. Alberto Espinoza Zertuche.pdf" target="_blank" style="text-decoration:underline;">Currículo Ing. Alberto Espinoza Zertuche</a></p>
+                                                      <p><a href="sesionesA/8 Sesión Ordinaria/4. PROPUESTA PROGRAMA GENERAL DE OBRA PÚBLICA 2019.pdf" target="_blank" style="text-decoration:underline;">Propuesta Programa General de Obra Pública 2019</a></p>
+                                                      <p><a href="sesionesA/8 Sesión Ordinaria/5. Dictamen Comisión de Reglamentos.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión de Reglamentos</a></p>
+                                                      <p><a href="sesionesA/8 Sesión Ordinaria/6. Anexo Dictamen Comisión de Reglamentos.pdf" target="_blank" style="text-decoration:underline;">Anexo Dictamen Comisión de Reglamentos</a></p>
+                                                   </div><hr>
+                                                    <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/dqvOiCZYzbA" data-target="#myModal_1">
+                                                      <ul class="list-inline">
+                                                      <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 8a Sesión Ordinaria
+                                                      </ul>
+                                                    </button>
+                                                    <div class="text-right">
+                                                      <span>Emisión: 29 Enero 2019</span>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Fin Modal 8° SESIÓN ORDINARIA -->
+                                      <li><i class=""></i><a href="#myModal_7" role="button" data-toggle="modal" class="comisiones">7° SESIÓN ORDINARIA</a></li><hr>
+                                      <!-- Modal 7° SESIÓN ORDINARIA  -->
+                                      <div id="myModal_7" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog modal-lg">
+                                              <!-- Modal content-->
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                        SÉPTIMA SESIÓN ORDINARIA</h3>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                      <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                      <p><a href="sesionesA/7 Sesión Ordinaria/Orden del Dia 7° Sesión Ordinaria.pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                      <hr>
+                                                      <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p>
+                                                      <p><a href="sesionesA/Actas de Sesiones/ACTA 6° SESION ORDINARIA.pdf" target="_blank" style="text-decoration:underline;">Acta Sexta Sesión Ordinaria</a></p>
+                                                      <p><a href="sesionesA/7 Sesión Ordinaria/1. INFORME TRIM OCT A DIC 2018 INSADIS.pdf" target="_blank" style="text-decoration:underline;">Informe Trimestral Oct a Dic 2018 INSADIS</a></p>
+                                                      <p><a href="sesionesA/7 Sesión Ordinaria/2. INFORME TRIM OCT A DIC 2018 DIF.pdf" target="_blank" style="text-decoration:underline;">Informe Trimestral Oct a Dic 2018 DIF</a></p>
+                                                      <p><a href="sesionesA/7 Sesión Ordinaria/3. PLAN DE TRABAJO Y PROG AUD CONTRALORIA.pdf" target="_blank" style="text-decoration:underline;">Plan de Trabajo y Programa de Auditorias Contraloría</a></p>
+                                                      <p><a href="sesionesA/7 Sesión Ordinaria/5. PLANTILLA AUTORIZADA 2018.pdf" target="_blank" style="text-decoration:underline;">Plantilla Autorizada 2018</a></p>
+                                                      <p><a href="sesionesA/7 Sesión Ordinaria/6. PLANTILLA AUTORIZADA 2019.pdf" target="_blank" style="text-decoration:underline;">Plantilla Autorizada 2019</a></p>
+                                                      <p><a href="sesionesA/7 Sesión Ordinaria/7. MANUAL OPERATIVO CIUDADANO.pdf" target="_blank" style="text-decoration:underline;">Manual Operativo Ciudadano</a></p>
+                                                      <p><a href="sesionesA/7 Sesión Ordinaria/8. OFIC PATR BOMBEROS.pdf" target="_blank" style="text-decoration:underline;">Oficio Patronato Bomberos</a></p>
+                                                      <p><a href="sesionesA/7 Sesión Ordinaria/9. DICTAMEN COMISION SERVICIOS PUBLICOS.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión Servicios Púbicos</a></p>
+                                                      <p><a href="sesionesA/7 Sesión Ordinaria/10. DICTAMEN COMISION DERECHOS HUMANOS.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión Derechos Humanos</a></p>
+                                                      <p><a href="sesionesA/7 Sesión Ordinaria/11. DICTAMEN COMISION HACIENDA.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión Hacienda</a></p>
+                                                      <p><a href="sesionesA/7 Sesión Ordinaria/12. DICTAMEN COMISION AGUA POTABLE.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión Agua Potable</a></p>
+                                                      </div><hr>
+                                                    <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/b3Kp6GEYHqg" data-target="#myModal_1">
+                                                      <ul class="list-inline">
+                                                      <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 7a Sesión Ordinaria
+                                                      </ul>
+                                                    </button>
+                                                    <div class="text-right">
+                                                      <span>Emisión: 18 Enero 2019</span>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Fin Modal 7° SESIÓN ORDINARIA -->
+                                      <li><i class=""></i><a href="#myModal_6" role="button" data-toggle="modal" class="comisiones">6° SESIÓN ORDINARIA</a></li><hr>
+                                      <!-- Modal 6° SESIÓN ORDINARIA  -->
+                                      <div id="myModal_6" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog modal-lg">
+                                              <!-- Modal content-->
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                        SEXTA SESIÓN ORDINARIA</h3>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                      <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                      <p><a href="sesionesA/6 Sesión Ordinaria/Orden del Dia 6° Sesión Ordinaria.pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                      <hr>
+                                                      <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p>
+                                                      <p><a href="sesionesA/Actas de Sesiones/ACTA 5° SESIÓN ORDINARIA.pdf" target="_blank" style="text-decoration:underline;">Acta Quinta Sesión Ordinaria</a></p>
+                                                      <p><a href="sesionesA/6 Sesión Ordinaria/1. Disposiciones Administrativas de Recaudacion 2019.pdf" target="_blank" style="text-decoration:underline;">Disposiciones Administrativas de Recaudación 2019</a>						                        </p>
+                                                      <p><a href="sesionesA/6 Sesión Ordinaria/2. 4TA MOD PRESUPUESTAL 2018.pdf" target="_blank" style="text-decoration:underline;">4ta Modificación Presupuestal 2018</a></p>
+                                                      <p><a href="sesionesA/6 Sesión Ordinaria/3. MUNICIPIO SALAMANCA 2019.pdf" target="_blank" style="text-decoration:underline;">Municipio Salamanca 2019</a></p>
+                                                      <p><a href="sesionesA/6 Sesión Ordinaria/4. DIF INGRESOS  Y EGRESOS 2019.pdf" target="_blank" style="text-decoration:underline;">DIF Ingresos y Egresos</a></p>
+                                                      <p><a href="sesionesA/6 Sesión Ordinaria/5. INSTITUTO MUNICIPAL DE SALAMANCA PARA LAS MUJERES 2019.pdf" target="_blank" style="text-decoration:underline;">Instituto Municipal de Salamanca para las Mujeres                        2019</a></p>
+                                                      <p><a href="sesionesA/6 Sesión Ordinaria/6. PROPUESTA PRESUP INSADIS 2019.pdf" target="_blank" style="text-decoration:underline;">Propuesta Presupuesto INSADIS 2019</a></p>
+                                                      <p><a href="sesionesA/6 Sesión Ordinaria/7. CMAPAS PRESUPUESTO DE EGRESOS 2019.pdf" target="_blank" style="text-decoration:underline;">CMAPAS Presupuesto de Egresos 2019</a></p>
+                                                      <p><a href="sesionesA/6 Sesión Ordinaria/8. INFORME DE LA COMISION DE HACIENDA.pdf" target="_blank" style="text-decoration:underline;">Informe de la Comisión de Hacienda</a></p>
+                                                      <p><a href="sesionesA/6 Sesión Ordinaria/10. AMONESTACION POZO LOS HERNANDEZ.pdf" target="_blank" style="text-decoration:underline;">Amonestación Pozo los Hernández</a></p>
+                                                      <p><a href="sesionesA/6 Sesión Ordinaria/11. AMONESTACION POZO MARYGOMEZ.pdf" target="_blank" style="text-decoration:underline;">Amonestación Pozo Mari Gómez</a></p>
+                                                      <p><a href="sesionesA/6 Sesión Ordinaria/12. SOLIC MODIF REGL MEDIO AMBIENTE.pdf" target="_blank" style="text-decoration:underline;">Solicitud Modificación Reglamento Medio Ambiente</a></p>
+                                                      <p><a href="sesionesA/6 Sesión Ordinaria/13. SOLIC APOYO ASILO.pdf" target="_blank" style="text-decoration:underline;">Solicitud Apoyo Asilo</a></p>
+                                                      <p><a href="sesionesA/6 Sesión Ordinaria/14. Dictamen MANAVIL 1.pdf" target="_blank" style="text-decoration:underline;">Dictamen MANAVIL 1</a></p>
+                                                      <p><a href="sesionesA/6 Sesión Ordinaria/15. Dictamen MANAVIL 2.pdf" target="_blank" style="text-decoration:underline;">Dictamen MANAVIL 2</a></p>
+                                                      <p><a href="sesionesA/6 Sesión Ordinaria/16. DICTAMEN REGLAM DIF MUNICIPAL.pdf" target="_blank" style="text-decoration:underline;">Dictamen Reglamento DIF Municipal</a></p>
+                                                      <p><a href="sesionesA/6 Sesión Ordinaria/17. DICTAMEN REGLAM ESTRUCTURA ORGANICA.pdf" target="_blank" style="text-decoration:underline;">Dictamen Reglamento Estructura Orgánica</a></p>
+                                                      <p><a href="sesionesA/6 Sesión Ordinaria/18. DICTAMEN MODIF REGLAM INT H AYTO.pdf" target="_blank" style="text-decoration:underline;">Dictamen Modificación Reglamento Interior H. Ayuntamiento</a></p>
+                                                      </div><hr>
+                                                    <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/5bHDvfje0eg" data-target="#myModal_1">
+                                                      <ul class="list-inline">
+                                                      <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 6a Sesión Ordinaria
+                                                      </ul>
+                                                    </button>
+                                                    <div class="text-right">
+                                                      <span>Emisión: 20 Diciembre 2018</span>
+                                                    </div><br>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Fin Modal 6° SESIÓN ORDINARIA -->
+                                      <li><i class=""></i><a href="#myModal_5" role="button" data-toggle="modal" class="comisiones">5° SESIÓN ORDINARIA</a></li><hr>
+                                      <!-- Modal 5° SESIÓN ORDINARIA  -->
+                                      <div id="myModal_5" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog modal-lg">
+                                              <!-- Modal content-->
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                        QUINTA SESIÓN ORDINARIA</h3>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                      <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                      <p><a href="sesionesA/5 Sesión Ordinaria/Orden del Dia 5° Sesión Ordinaria.pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                      <hr>
+                                                      <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p>
+                                                      <p><a href="sesionesA/Actas de Sesiones/ACTA 4° SESION ORDINARIA .pdf" target="_blank" style="text-decoration:underline;">Acta Cuarta Sesión Ordinaria</a></p>
+                                                      <p><a href="sesionesA/5 Sesión Ordinaria/1. Informe Juzgado Mpal..pdf" target="_blank" style="text-decoration:underline;">Informe Juzgado Municipal</a></p>
+                                                      <p><a href="sesionesA/5 Sesión Ordinaria/2. Resumen Curricular Cecilia Zermeño.pdf" target="_blank" style="text-decoration:underline;">Resumen Curricular Cecilia Zermeño</a></p>
+                                                      <p><a href="sesionesA/5 Sesión Ordinaria/3. Escritura Predio Colegio Ingenieros.pdf" target="_blank" style="text-decoration:underline;">Escritura Predio Colegio Ingenieros</a></p>
+                                                      <p><a href="sesionesA/5 Sesión Ordinaria/4. Donación Equinos.pdf" target="_blank" style="text-decoration:underline;">Donación Equinos</a></p>
+                                                      <p><a href="sesionesA/5 Sesión Ordinaria/5. Solicitud Bomberos.pdf" target="_blank" style="text-decoration:underline;">Solicitud Bomberos</a></p>
+                                                      <p><a href="sesionesA/5 Sesión Ordinaria/6. Oficio SAPASVA.pdf" target="_blank" style="text-decoration:underline;">Oficio SAPASVA</a></p>
+                                                      <p><a href="sesionesA/5 Sesión Ordinaria/7. Oficio Union de Usuarios Valtierrilla.pdf" target="_blank" style="text-decoration:underline;">Oficio Unión de Usuarios Valtierrilla</a></p>
+                                                      <p><a href="sesionesA/5 Sesión Ordinaria/8. Bases Loma Linda.pdf" target="_blank" style="text-decoration:underline;">Bases Loma Linda</a></p>
+                                                      <p><a href="sesionesA/5 Sesión Ordinaria/9. Oficio Inmb. Salazar.pdf" target="_blank" style="text-decoration:underline;">Oficio Inmobiliaria Salazar</a></p>
+                                                      <p><a href="sesionesA/5 Sesión Ordinaria/10. Dictamen Ley de Austeridad.pdf" target="_blank" style="text-decoration:underline;">Dictamen Ley de Austeridad</a></p>
+                                                      <p><a href="sesionesA/5 Sesión Ordinaria/11. Dictamen Vehiculos Eléctricos.pdf" target="_blank" style="text-decoration:underline;">Dictamen Vehículos Eléctricos</a></p>
+                                                      <p><a href="sesionesA/5 Sesión Ordinaria/12. Dictamen Casa Alegra.pdf" target="_blank" style="text-decoration:underline;">Dictamen Casa Alegra</a></p>
+                                                      <p><a href="sesionesA/5 Sesión Ordinaria/13. Informes Comisión Medio Ambiente.pdf" target="_blank" style="text-decoration:underline;">Informes Comisión Medio Ambiente</a></p>
+                                                      </div><hr>
+                                                    <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/9nNBBQ8Ei7U" data-target="#myModal_1">
+                                                      <ul class="list-inline">
+                                                      <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 5a Sesión Ordinaria
+                                                      </ul>
+                                                    </button>
+                                                    <div class="text-right">
+                                                      <span>Emisión: 14 Diciembre 2018</span>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Fin Modal 5° SESIÓN ORDINARIA -->
+                                      <li><i class=""></i><a href="#myModal_4" role="button" data-toggle="modal" class="comisiones">4° SESIÓN ORDINARIA</a></li><hr>
+                                      <!-- Modal 4° SESIÓN ORDINARIA  -->
+                                      <div id="myModal_4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog modal-lg">
+                                              <!-- Modal content-->
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                        CUARTA SESIÓN ORDINARIA</h3>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                      <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                      <p><a href="sesionesA/4 Sesión Ordinaria/Orden del Dia 4° Sesión Ordinaria.pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                      <hr>
+                                                      <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p>
+                                                      <p><a href="sesionesA/Actas de Sesiones/ACTA 3° SESION ORDINARIA .pdf" target="_blank" style="text-decoration:underline;">Acta Tercera Sesión Ordinaria</a></p>
+                                                      <p><a href="sesionesA/4 Sesión Ordinaria/1. SOLICITUD BECA 2019 GAEL PESCADOR.pdf" target="_blank" style="text-decoration:underline;">Solicitud Beca 2019 Gael Pescador</a></p>
+                                                      <p><a href="sesionesA/4 Sesión Ordinaria/2. RECOM SIST EST ANTI CORRUPCION.pdf" target="_blank" style="text-decoration:underline;">Recomendación Sistema Estatal Anticorrupción</a></p>
+                                                      <p><a href="sesionesA/4 Sesión Ordinaria/3. PROGRAMA INCENT NVAS INV IND MANUFACT.pdf" target="_blank" style="text-decoration:underline;">Programa de Incentivos y Apoyos a Nuevas Inversiones para la                          Industria Manufacturera</a></p>
+                                                      <p><a href="sesionesA/4 Sesión Ordinaria/4. CONVOCATORIA IMPLAN.pdf" target="_blank" style="text-decoration:underline;">Convocatoria IMPLAN</a></p>
+                                                      <p><a href="sesionesA/4 Sesión Ordinaria/5. DICTAMEN POSITIVO CONFORMIDAD MUNICIPAL ABAD-1RO.pdf" target="_blank" style="text-decoration:underline;">Dictamen Positivo Conformidad Municipal ABAD-1ro</a></p                        >
+                                                      <p><a href="sesionesA/4 Sesión Ordinaria/6. DICTAMEN POSITIVO CONFORMIDAD MUNICIPAL LIMVIPRO.pdf" target="_blank" style="text-decoration:underline;">Dictamen Positivo Conformidad Municipal LIMVIPRO</a></p                        >
+                                                      <p><a href="sesionesA/4 Sesión Ordinaria/7. DICTAMEN POSITIVO CONFORMIDAD MUNICIPAL PYP SEGURIDAD PRIVADA.pdf" target="_blank" style="text-decoration:underline;">Dictamen Positivo Conformidad Municipal                         PYP Seguridad Privada</a></p>
+                                                      <p><a href="sesionesA/4 Sesión Ordinaria/8. DICTAMEN POSITIVO CONFORMIDAD MUNICIPAL SINTSE.pdf" target="_blank" style="text-decoration:underline;">Dictamen Positivo Conformidad Municipal SINTSE</a></p>
+                                                      <p><a href="sesionesA/4 Sesión Ordinaria/9. DICTAMEN LAS PALAPAS.pdf" target="_blank" style="text-decoration:underline;">Dictamen las Palapas</a></p>
+                                                      <p><a href="sesionesA/4 Sesión Ordinaria/10. DICTAMEN VILLAS DEL CAMPO.pdf" target="_blank" style="text-decoration:underline;">Dictamen Villas del Campo</a></p>
+                                                      </div><hr>
+                                                    <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/wcTeB0NmR6M" data-target="#myModal_1">
+                                                      <ul class="list-inline">
+                                                      <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 4a Sesión Ordinaria
+                                                      </ul>
+                                                    </button>
+                                                    <div class="text-right">
+                                                      <span>Emisión: 29 Noviembre 2018</span>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Fin Modal 4° SESIÓN ORDINARIA -->
+                                      <li><i class=""></i><a href="#myModal_3" role="button" data-toggle="modal" class="comisiones">3° SESIÓN ORDINARIA</a></li><hr>
+                                      <!-- Modal 3° SESIÓN ORDINARIA  -->
+                                      <div id="myModal_3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog modal-lg">
+                                              <!-- Modal content-->
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                        TERCERA SESIÓN ORDINARIA</h3>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                      <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                      <p><a href="sesionesA/3 Sesión Ordinaria/Orden del Dia 3° Sesión Ordinaria.pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                      <hr>
+                                                      <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p>
+                                                      <p><a href="sesionesA/Actas de Sesiones/ACTA 2° SESION ORDINARIA.pdf" target="_blank" style="text-decoration:underline;">Acta Segunda Sesión Ordinaria</a></p>
+                                                      <p><a href="sesionesA/3 Sesión Ordinaria/1. INICIATIVA LEY DE INGRESOS 2019.pdf" target="_blank" style="text-decoration:underline;">Iniciativa Ley de Ingresos 2019</a></p>
+                                                      <p><a href="sesionesA/3 Sesión Ordinaria/2. Oficio IMSM.pdf" target="_blank" style="text-decoration:underline;">Oficio IMSM</a></p>
+                                                      <p><a href="sesionesA/3 Sesión Ordinaria/3. CONVOCATORIA CONSULTA COMITÉS PARTICIPACIÓN.pdf" target="_blank" style="text-decoration:underline;">Convocatoria Consulta Comités Participación</a></p>
+                                                      <p><a href="sesionesA/3 Sesión Ordinaria/4. DGOTU 0559.pdf" target="_blank" style="text-decoration:underline;">DGOTU 0559</a></p>
+                                                      <p><a href="sesionesA/3 Sesión Ordinaria/5. DGOTU.pdf" target="_blank" style="text-decoration:underline;">DGOTU</a></p>
+                                                      <p><a href="sesionesA/3 Sesión Ordinaria/6. CIRCULAR 19.pdf" target="_blank" style="text-decoration:underline;">Circular 19</a></p>
+                                                      <p><a href="sesionesA/3 Sesión Ordinaria/7. CIRCULAR 20.pdf" target="_blank" style="text-decoration:underline;">Circular 20</a></p>
+                                                      <p><a href="sesionesA/3 Sesión Ordinaria/8. Nomenclatura Residencial San Miguel.pdf" target="_blank" style="text-decoration:underline;">Nomenclatura Residencial San Miguel</a></p>
+                                                      <p><a href="sesionesA/3 Sesión Ordinaria/9. Dictamen Cuarta Etapa Prados Verdes.pdf" target="_blank" style="text-decoration:underline;">Dictamen Cuarta Etapa Prados Verdes</a></p>
+                                                      </div><hr>
+                                                    <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/msaKEQpq75k" data-target="#myModal_1">
+                                                      <ul class="list-inline">
+                                                      <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 3a Sesión Ordinaria
+                                                      </ul>
+                                                    </button>
+                                                    <div class="text-right">
+                                                      <span>Emisión: 14 Noviembre 2018</span>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Fin Modal 3° SESIÓN ORDINARIA -->
+                                      <li><i class=""></i><a href="#myModal_02" role="button" data-toggle="modal" class="comisiones">2° SESIÓN ORDINARIA</a></li><hr>
+                                      <!-- Modal 2° SESIÓN ORDINARIA  -->
+                                      <div id="myModal_02" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog modal-lg">
+                                              <!-- Modal content-->
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                        SEGUNDA SESIÓN ORDINARIA</h3>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                      <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                      <p><a href="sesionesA/2 Sesión Ordinaria/Orden del Dia 2° Sesión Ordinaria.pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                      <hr>
+                                                      <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p>
+                                                      <p><a href="sesionesA/Actas de Sesiones/ACTA 1° SESION ORDINARIA.pdf" target="_blank" style="text-decoration:underline;">Acta Primera Sesión Ordinaria</a></p>
+                                                      <p><a href="sesionesA/2 Sesión Ordinaria/1. Oficio Circular 6. LSSPGTO..pdf" target="_blank" style="text-decoration:underline;">Oficio Circular 6. LSSPGTO</a></p>
+                                                      <p><a href="sesionesA/2 Sesión Ordinaria/2. Oficio Circular 7 LPSVGTO.pdf" target="_blank" style="text-decoration:underline;">Oficio Circular 7. LPSVGTO</a></p>
+                                                      <p><a href="sesionesA/2 Sesión Ordinaria/3. Acuse Publicación Convocatoria Contralor.pdf" target="_blank" style="text-decoration:underline;">Acuse Publicación Convocatoria Contralor</a></p>
+                                                      <p><a href="sesionesA/2 Sesión Ordinaria/4. Comité de Transparencia.pdf" target="_blank" style="text-decoration:underline;">Comité de Transparencia</a></p>
+                                                      <p><a href="sesionesA/2 Sesión Ordinaria/5. Propuesta Suplentes Comité de Transparencia.pdf" target="_blank" style="text-decoration:underline;">Propuesta Suplentes Comité de Transparencia</a></p>
+                                                      <p><a href="sesionesA/2 Sesión Ordinaria/6. Oficio IMSM.pdf" target="_blank" style="text-decoration:underline;">Oficio IMSM</a></p>
+                                                      <p><a href="sesionesA/2 Sesión Ordinaria/7. Convenio Asociación Ganadera.pdf" target="_blank" style="text-decoration:underline;">Convenio Asociación Ganadera</a></p>
+                                                      <p><a href="sesionesA/2 Sesión Ordinaria/8. Nombramiento Srio. Gral. Congreso.pdf" target="_blank" style="text-decoration:underline;">Nombramiento Secretario General Congreso</a></p>
+                                                      <p><a href="sesionesA/2 Sesión Ordinaria/9. Oficio Circular 1.pdf" target="_blank" style="text-decoration:underline;">Oficio Circular 1</a></p>
+                                                      <p><a href="sesionesA/2 Sesión Ordinaria/10. Oficio Circular 3.pdf" target="_blank" style="text-decoration:underline;">Oficio Circular 3</a></p>
+                                                      <p><a href="sesionesA/2 Sesión Ordinaria/11. Oficio Circular 8.pdf" target="_blank" style="text-decoration:underline;">Oficio Circular 8</a></p>
+                                                      <p><a href="sesionesA/2 Sesión Ordinaria/12. Coord. Fracción PAN.pdf" target="_blank" style="text-decoration:underline;">Coordinador de la Fracción PAN</a></p>
+                                                      </div><hr>
+                                                    <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/GS7TcgHtXQo" data-target="#myModal_1">
+                                                      <ul class="list-inline">
+                                                      <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 2a Sesión Ordinaria
+                                                      </ul>
+                                                    </button>
+                                                    <div class="text-right">
+                                                      <span>Emisión: 25 Octubre 2018</span>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Fin Modal 2° SESIÓN ORDINARIA -->
+                                      <li><i class=""></i><a href="#myModal_101" role="button" data-toggle="modal" class="comisiones">1° SESIÓN ORDINARIA</a></li><hr>
+                                      <!-- Modal 1° SESIÓN ORDINARIA  -->
+                                      <div id="myModal_101" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog modal-lg">
+                                              <!-- Modal content-->
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                        PRIMERA SESIÓN ORDINARIA</h3>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                      <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                      <p><a href="sesionesA/1 Sesión Ordinaria/Orden del Dia 3° Sesión Ordinaria.pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                      <!-- <hr> -->
+                                                      <!-- <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p> -->
+                                                      <!-- <p><a href="sesionesA/Actas de Sesiones/ACTA 2° SESION ORDINARIA.pdf" target="_blank" style="text-decoration:underline;">Acta Segunda Sesión Ordinaria</a></p>
+                                                      <p><a href="sesionesA/3 Sesión Ordinaria/1. INICIATIVA LEY DE INGRESOS 2019.pdf" target="_blank" style="text-decoration:underline;">Iniciativa Ley de Ingresos 2019</a></p>
+                                                      <p><a href="sesionesA/3 Sesión Ordinaria/2. Oficio IMSM.pdf" target="_blank" style="text-decoration:underline;">Oficio IMSM</a></p>
+                                                      <p><a href="sesionesA/3 Sesión Ordinaria/3. CONVOCATORIA CONSULTA COMITÉS PARTICIPACIÓN.pdf" target="_blank" style="text-decoration:underline;">Convocatoria Consulta Comités Participación</a></p>
+                                                      <p><a href="sesionesA/3 Sesión Ordinaria/4. DGOTU 0559.pdf" target="_blank" style="text-decoration:underline;">DGOTU 0559</a></p>
+                                                      <p><a href="sesionesA/3 Sesión Ordinaria/5. DGOTU.pdf" target="_blank" style="text-decoration:underline;">DGOTU</a></p>
+                                                      <p><a href="sesionesA/3 Sesión Ordinaria/6. CIRCULAR 19.pdf" target="_blank" style="text-decoration:underline;">Circular 19</a></p>
+                                                      <p><a href="sesionesA/3 Sesión Ordinaria/7. CIRCULAR 20.pdf" target="_blank" style="text-decoration:underline;">Circular 20</a></p>
+                                                      <p><a href="sesionesA/3 Sesión Ordinaria/8. Nomenclatura Residencial San Miguel.pdf" target="_blank" style="text-decoration:underline;">Nomenclatura Residencial San Miguel</a></p>
+                                                      <p><a href="sesionesA/3 Sesión Ordinaria/9. Dictamen Cuarta Etapa Prados Verdes.pdf" target="_blank" style="text-decoration:underline;">Dictamen Cuarta Etapa Prados Verdes</a></p> -->
+                                                      </div><hr>
+                                                    <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/9T1653sPDvk" data-target="#myModal_1">
+                                                      <ul class="list-inline">
+                                                      <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 1a Sesión Ordinaria
+                                                      </ul>
+                                                    </button>
+                                                    <div class="text-right">
+                                                      <span>Publicado: 11 Marzo 2019</span>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Fin Modal 1° SESIÓN ORDINARIA -->
+                                    </ul>
+                                  </div>
+                                  <button type="button"  style="margin:0; padding:0;" class="text-left btn-sm" onclick="vermas_sordinaria()" id="boton_ordinaria">&nbsp;Ver más..</button>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                    </div>
+                  </div>
+                    <div class="sesiones">
+                      <div class="container-fluid">
+                          <div class="row">
+                                <div class="col-md-12">
+                                    <div id="custom-search-input" style="margin-top:2%;">
+                                      <div class="" style="background-color:none; ">
+                                        <div class="bienvendida2"><br>
+                                          <span style="font-size:13px;">SESIONES EXTRAORDINARIAS</span>
+                                          <ul class="fa-ul list-group list-group-flush "style=" margin-left:0;"><hr>
+                                            <li><i class=" "></i><a href="#myModal_extra_3" role="button" data-toggle="modal" class="comisiones">3° SESIÓN EXTRAORDINARIA</a></li><hr>
+                                            <!-- Modal 3° SESIÓN EXTRAORDINARIA  -->
+                                            <div id="myModal_extra_3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-lg">
+                                                    <!-- Modal content-->
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                            <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                              TERCERA SESIÓN EXTRAORDINARIA</h3>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                          <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                            <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                            <p><a href="sesionesA/3 Sesión Extraordinaria/Orden del Dia 3° Sesión Extraordinaria.pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                            <hr>
+                                                            <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p>
+                                                            <p><a href="sesionesA/3 Sesión Extraordinaria/Tercera sesión extraordinaria. Doctos Sesión_.pdf" target="_blank" style="text-decoration:underline;">Proyecto de Iniciativa de Ley de Ingresos para el Municipio de Salamanca, Gto.</a></p>
+                                                            <!-- <p><a href="sesionesA/3 Sesión Extraordinaria/REGLAMENTO DIF 2018.pdf" target="_blank" style="text-decoration:underline;">Convenio de Anticipo de Participaciones Federales con la Secretaría de Finanzas, Inversión y Administración</a></p> -->
+                                                            <!-- <p><a href="sesionesA/3 Sesión Extraordinaria/SENTENCIA TJA EXP 737 3A SALA 201810122018.pdf" target="_blank" style="text-decoration:underline;">Sentencia 737/3aSala/18</a></p>
+                                                            <p><a href="sesionesA/3 Sesión Extraordinaria/SOLICITUD DONACION COBIJAS.pdf" target="_blank" style="text-decoration:underline;">Solicitud Donación Cobijas</a></p> -->
+                                                          </div><hr>
+                                                          <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/SpYQfhJ1VaM" data-target="#myModal_1">
+                                                            <ul class="list-inline">
+                                                            <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 3a Sesión Extraordinaria
+                                                            </ul>
+                                                          </button>
+                                                          <div class="text-right">
+                                                            <span>Emisión: 10 Diciembre 2018</span>
+                                                          </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Fin Modal 3° SESIÓN EXTRAORDINARIA -->
+                                            <li><i class=" "></i><a href="#myModal_extra_2" role="button" data-toggle="modal" class="comisiones">2° SESIÓN EXTRAORDINARIA</a></li><hr>
+                                            <!--  -->
+                                            <!-- Modal 2° SESIÓN EXTRAORDINARIA  -->
+                                            <div id="myModal_extra_2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-lg">
+                                                    <!-- Modal content-->
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                            <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                              SEGUNDA SESIÓN EXTRAORDINARIA</h3>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                          <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                            <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                            <p><a href="sesionesA/2 Sesión Extraordinaria/Orden del Dia 2° Sesión Extraordinaria.pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                            <hr>
+                                                            <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p>
+                                                            <p><a href="sesionesA/2 Sesión Extraordinaria/DICTAMEN COMISION SERVICIOS PUBLICOS10122018.pdf" target="_blank" style="text-decoration:underline;">Dictamen Comisión Servicios Públicos</a></p>
+                                                            <p><a href="sesionesA/2 Sesión Extraordinaria/REGLAMENTO DIF 2018.pdf" target="_blank" style="text-decoration:underline;">Reglamento DIF 2018</a></p>
+                                                            <p><a href="sesionesA/2 Sesión Extraordinaria/SENTENCIA TJA EXP 737 3A SALA 201810122018.pdf" target="_blank" style="text-decoration:underline;">Sentencia 737/3aSala/18</a></p>
+                                                            <p><a href="sesionesA/2 Sesión Extraordinaria/SOLICITUD DONACION COBIJAS.pdf" target="_blank" style="text-decoration:underline;">Solicitud Donación Cobijas</a></p>
+                                                          </div><hr>
+                                                          <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/SpYQfhJ1VaM" data-target="#myModal_1">
+                                                            <ul class="list-inline">
+                                                            <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 2a Sesión Extraordinaria
+                                                            </ul>
+                                                          </button>
+                                                          <div class="text-right">
+                                                            <span>Emisión: 10 Diciembre 2018</span>
+                                                          </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Fin Modal 2° SESIÓN EXTRAORDINARIA -->
+                                            <!--  -->
+                                            <li><i class=""></i><a href="#myModal_extra_1" role="button" data-toggle="modal" class="comisiones">1° SESIÓN EXTRAORDINARIA</a></li><hr>
+                                            <!-- Modal 1° SESIÓN EXTRAORDINARIA  -->
+                                            <div id="myModal_extra_1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-lg">
+                                                    <!-- Modal content-->
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                            <h3 class="modal-title" style="color:#fcb600; font-weight:bold; text-align:center;">
+                                                              PRIMERA SESIÓN EXTRAORDINARIA</h3>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                          <div role="tabpanel" class="tab-pane fade in active" id="Section09">
+                                                            <p><b>PROYECTO DE ORDEN DEL DÍA:</b></p>
+                                                            <p><a href="sesionesA/1 Sesión Extraordinaria/Orden del Dia 1° Sesión Extraordinaria.pdf" target="_blank" style="text-decoration:underline;">Orden del día</a></p>
+                                                            <hr>
+                                                            <p><b>DOCUMENTOS EN QUE SOPORTAN LOS ASUNTOS A TRATAR EN LA SESIÓN DE AYUNTAMIENTO:</b></p>
+                                                            <p><a href="sesionesA/1 Sesión Extraordinaria/PRIMERA SESION EXTRA ORDINARIA. Documentos de sesión.pdf" target="_blank" style="text-decoration:underline;">Convenio de Anticipo de Participaciones Federales con la Secretaría de Finanzas, Inversión y Administración</a></p>
+                                                            <!-- <p><a href="sesionesA/2 Sesión Extraordinaria/REGLAMENTO DIF 2018.pdf" target="_blank" style="text-decoration:underline;">Reglamento DIF 2018</a></p>
+                                                            <p><a href="sesionesA/2 Sesión Extraordinaria/SENTENCIA TJA EXP 737 3A SALA 201810122018.pdf" target="_blank" style="text-decoration:underline;">Sentencia 737/3aSala/18</a></p>
+                                                            <p><a href="sesionesA/2 Sesión Extraordinaria/SOLICITUD DONACION COBIJAS.pdf" target="_blank" style="text-decoration:underline;">Solicitud Donación Cobijas</a></p> -->
+                                                          </div><hr>
+                                                          <button type="button" class="btn btn-warning video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/V3APyJhUD3o" data-target="#myModal_1">
+                                                            <ul class="list-inline">
+                                                            <i class="glyphicon glyphicon-facetime-video lighter"></i>&nbsp;&nbsp; Video 1a Sesión Extraordinaria
+                                                            </ul>
+                                                          </button>
+                                                          <div class="text-right">
+                                                            <span>Emisión: 03 Diciembre 2018</span>
+                                                          </div>+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Fin Modal 1° SESIÓN EXTRAORDINARIA -->
+                                            <!-- <li><i class=""></i><a href="#" target="_blank">18° SESIÓN EXTRAORDINARIA</a></li><hr> -->
+
+                                        <span style="margin-top:2%; padding:0;" id="puntos_extra"></span>
+                                        <div class="" id="mas_extra">
+                                          <!-- <li><i class=""></i><a href="#myModal_18" role="button" data-toggle="modal">17° SESIÓN EXTRAORDINARIA</a></li><hr>
+                                            <li><i class=""></i><a href="#myModal_18" role="button" data-toggle="modal">16° SESIÓN EXTRAORDINARIA</a></li><hr>
+                                            <li><i class=""></i><a href="#myModal_18" role="button" data-toggle="modal">15° SESIÓN EXTRAORDINARIA</a></li><hr>
+                                            <li><i class=""></i><a href="#myModal_18" role="button" data-toggle="modal">14° SESIÓN EXTRAORDINARIA</a></li><hr>
+                                            <li><i class=""></i><a href="#myModal_18" role="button" data-toggle="modal">13° SESIÓN EXTRAORDINARIA</a></li><hr>
+                                            <li><i class=""></i><a href="#myModal_18" role="button" data-toggle="modal">12° SESIÓN EXTRAORDINARIA</a></li><hr>
+                                            <li><i class=""></i><a href="#myModal_18" role="button" data-toggle="modal">11° SESIÓN EXTRAORDINARIA</a></li><hr>
+                                            <li><i class=""></i><a href="#myModal_18" role="button" data-toggle="modal">10° SESIÓN EXTRAORDINARIA</a></li><hr>
+                                            <li><i class=""></i><a href="#myModal_18" role="button" data-toggle="modal">9° SESIÓN EXTRAORDINARIA</a></li><hr>
+                                            <li><i class=""></i><a href="#myModal_18" role="button" data-toggle="modal">8° SESIÓN EXTRAORDINARIA</a></li><hr>
+                                            <li><i class=""></i><a href="#myModal_18" role="button" data-toggle="modal">7° SESIÓN EXTRAORDINARIA</a></li><hr>
+                                            <li><i class=""></i><a href="#myModal_18" role="button" data-toggle="modal">6° SESIÓN EXTRAORDINARIA</a></li><hr>
+                                            <li><i class=""></i><a href="#myModal_18" role="button" data-toggle="modal">5° SESIÓN EXTRAORDINARIA</a></li><hr>
+                                            <li><i class=""></i><a href="#myModal_18" role="button" data-toggle="modal">4° SESIÓN EXTRAORDINARIA</a></li><hr>
+                                            <li><i class=""></i><a href="#myModal_18" role="button" data-toggle="modal">3° SESIÓN EXTRAORDINARIA</a></li><hr>
+                                            <li><i class=""></i><a href="#myModal_18" role="button" data-toggle="modal">2° SESIÓN EXTRAORDINARIA</a></li><hr>
+                                            <li><i class=""></i><a href="#myModal_18" role="button" data-toggle="modal">1° SESIÓN EXTRAORDINARIA</a></li><hr> -->
+                                          </ul>
+                                        </div>
+                                        <!-- <button type="button" style="margin:0; padding:0;"
+                                        class="text-left btn-sm" onclick="vermas_sextra()" id="boton_extra">&nbsp;Ver más..</button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- sesiones extraordinarias -->
+
+                    <!--  -->
+                    <div class="container-fluid">
+                        <div class="row">
+                              <div class="col-md-12"><br>
+                                  <div id="custom-search-input" style="margin-top:0;">
+                                    <div class="" style="background-color:none; ">
+                                      <div class="bienvendida2"><br>
+                                        <div class="row noticias " style="">
+                                          <div class="col-sm-12 col-md-12 col- lg-12 ">
+                                            <!-- <h4 style="color:#5a2d3f; text-align:center;">CONVENIOS</h4> -->
+                                              <h3 style="text-align:center; color:#333333;">Comisiones Unidas</h3>
+                                            <hr>
+                                            <ul class="fa-ul list-group list-group-flush "  style="margin-left:1%;">
+                                              <i class="glyphicon glyphicon-folder-open"></i>
+                                                <button id="derechos" class="links  botones" onclick="vermas_derechosh()">
+                                                &nbsp; COMISIÓN DE DERECHOS HUMANOS</button></li>
+                                              <ul class="fa-ul list-group list-group-flush">
+                                                <div class="nombres comisiones" id="derechos_1" style="display:none; margin-top:2%;">
+                                                  <li><i class="" style=""></i><a href="comisiones/1ra_Reunion_Trabajo.pdf" target="_blank">1ra REUNION DE TRABAJO</a></li>
+                                                  <li><i class=""></i><a href="sesionesA/22° Sesión Ordinaria/5.1 REUNIÓN DE TRABAJO COM. DERECHOS HUM. CIRCULAR 105.pdf" target="_blank">2da REUNIÓN DE TRABAJO</a></li>
+                                                </div>
+                                              </ul>
+                                              <!--  -->
+                                              <i class="glyphicon glyphicon-folder-open"></i>  <a><button id="orden" class=" links  botones" onclick="vermas_orden()">
+                                                &nbsp; COMISIÓN DESARROLLO URBANO Y ORDENAMIENTO</button></a></li>
+                                              <ul class="fa-ul list-group list-group-flush  ">
+                                                <div  class="nombres comisiones" id="orden_1" style="display:none; margin-top:2%;" class="">
+                                                <li><i class=""></i><a href="sesionesA/22° Sesión Ordinaria/5.1 REUNIÓN DE TRABAJO COM. DERECHOS HUM. CIRCULAR 105.pdf.pdf" target="_blank">DICTAMEN TOTEM CLUB DE LEONES</a></li>
+                                                <li><i class=""></i><a href="sesionesA/22° Sesión Ordinaria/5.1 REUNIÓN DE TRABAJO COM. DERECHOS HUM. CIRCULAR 105.pdf" target="_blank">DICTAMEN RANCHO LOS RAMÍREZ</a></li>
+                                                  <li><i class=""></i><a href="sesionesA/22° Sesión Ordinaria/5.1 REUNIÓN DE TRABAJO COM. DERECHOS HUM. CIRCULAR 105.pdf" target="_blank">DICTAMEN PERMUTA</a></li>
+                                                </div>
+                                              </ul>
+                                              <!--  -->
+                                                <i class="glyphicon glyphicon-folder-open"></i>
+                                                <a><button id="gob" class=" links  botones" onclick="vermas_gobierno()">
+                                                &nbsp; COMISIÓN DE GOBIERNO</button></a></li>
+                                              <ul class="fa-ul list-group list-group-flush  ">
+                                                <div  class="nombres comisiones" id="gob_1" style="display:none; margin-top:2%;" class="">
+                                              <li><i class=""></i><a href="sesionesA/22° Sesión Ordinaria/5.1 REUNIÓN DE TRABAJO COM. DERECHOS HUM. CIRCULAR 105.pdf" target="_blank">DICTAMEN CIRCULAR 88</a></li>
+                                              <li><i class=""></i><a href="sesionesA/22° Sesión Ordinaria/5.1 REUNIÓN DE TRABAJO COM. DERECHOS HUM. CIRCULAR 105.pdf" target="_blank">DICTAMEN CIRCULAR 89</a></li>
+                                                <li><i class=""></i><a href="sesionesA/22° Sesión Ordinaria/5.1 REUNIÓN DE TRABAJO COM. DERECHOS HUM. CIRCULAR 105.pdf" target="_blank">DICTAMEN CIRCULAR 92</a></li>
+                                                <li><i class=""></i><a href="sesionesA/22° Sesión Ordinaria/5.1 REUNIÓN DE TRABAJO COM. DERECHOS HUM. CIRCULAR 105.pdf" target="_blank">DICTAMEN CIRCULAR 97</a></li>
+                                                </div>
+                                              </ul>
+                                              <!--  -->
+                                              <i class="glyphicon glyphicon-folder-open"></i>  <a><button id="migrante" class=" links  botones" onclick="vermas_migrante()">
+                                                &nbsp; COMISIÓN ATENCIÓN AL MIGRANTE</button></a></li>
+                                              <ul class="fa-ul list-group list-group-flush  ">
+                                                <div  class="nombres comisiones" id="migrante_1" style="display:none; margin-top:2%;" class="">
+                                                <li><i class=""></i><a href="sesionesA/22° Sesión Ordinaria/5.1 REUNIÓN DE TRABAJO COM. DERECHOS HUM. CIRCULAR 105.pdf" target="_blank">DICTAMEN CIRCULAR 112</a></li>
+                                                <li><i class=""></i><a href="sesionesA/22° Sesión Ordinaria/5.1 REUNIÓN DE TRABAJO COM. DERECHOS HUM. CIRCULAR 105.pdf" target="_blank">DICTAMEN SR-700-2019</a></li>
+                                                </div>
+                                              </ul>
+                                              <!-- <li><i class=""></i><a href="https://www.youtube.com/watch?v=RB7WJ75pdaM" target="_blank" class=" links">20a Sesión Ordinaria del H. Ayuntamiento</a></li><br>
+                                              <li><i class=""></i><a href="pdfs/CONVOCATORIA_PEJ_2019.pdf" target="_blank" class=" links">Premio Estatal de la Juventud 2019</a></li><br>
+                                              <li><i class=""></i><a href="https://www.youtube.com/watch?v=5drZEbdGggg" target="_blank" class=" links">19a Sesión Ordinaria del H. Ayuntamiento</a></li><br>
+                                              <li><i class=""></i><a href="http://www.salamanca.gob.mx/Transparencia/Transparencia.htm" target="_blank" class=" links">Transparencia</a></li><br>
+                                              <li><i class=""></i><a href="sare/index.html" target="_blank" class=" links">SARE</a></li><br> -->
+                                            </ul><br>
+                                          </div>
+                                        </div>
+
+                                  </div>
+                              </div>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- comisiones -->
+              </div>
+              <!-- sesiones extraordinarias -->
+
+
+
+
+              <!--  -->
+            </div>
+            <!-- <br>
+            <div class="col-sm-12 col-md-12 col-lg-12 container-fluid" style="margin-top:25px; ">
+                        <div class="accesos">
+                          <div class="midpanel">
+                            <div class="">
+                              <div class="border"></div>
+                              <div class="">
+                                <div class="left marRigth20"> -->
+                                  <!-- <blockquote class="twitter-tweet" data-lang="es">
+                                    <p lang="es" dir="ltr">Esta mañana, en un diálogo cercano a través de la XEZH, la alcaldesa
+                                      <a href="https://twitter.com/BettyHdezC?ref_src=twsrc%5Etfw">@BettyHdezC</a>
+                                      comparte a la ciudadanía acciones en materia de prevención y seguridad, temas integrales que han contado con la participación de la ciudadanía, sector empresarial y gobierno municipal. <a href="https://t.co/vUY1pDvV1A">pic.twitter.com/vUY1pDvV1A</a></p>&mdash; Gobierno Salamanca (@GobSalamanca) <a href="https://twitter.com/GobSalamanca/status/1148954907942064128?ref_src=twsrc%5Etfw">10 de julio de 2019</a></blockquote> -->
+                                  <!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                                  <a class="twitter-timeline"
+                                      href="https://twitter.com/@GobSalamanca"
+                                      data-tweet-limit="3">
+                                    Tweets by @GobSalamanca
+                                    </a>
+                              </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+            </div> -->
+
+          </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!-- termina div de gabinete -->
+<!-- modal del video en sesiones -->
+<div class="modal fade" id="myModal_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+    <div class="modal-body">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+      </button>
+        <!-- 16:9 aspect ratio -->
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allowfullscreen></iframe>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<!--  -->
+</div>​
+<!-- <input name="boton_cargar" id="boton_cargar" type="button" value="Cargar contenido" /> -->
+
+<!-- <div name="div_dinamico" id="div_dinamico" class="div_dinamico"></div> -->
+    <div class="footer">
+    <div class="" style="text-align:center; " target="_blank">
+      <br>
+      <a href="https://www.facebook.com/GobSalamanca/">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAGcAAABnABqSUrGwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAXfSURBVHic7ZxriFZFHMZ/fzUNNUntYmqFIWYJlrVlV0EpMIwIiSRL/ZYhmlmkYKIUpVGU9KG8gQgVRAYiSGVYsnQzpZtkJmWia97SpVJRN/Xpw3mFdd1zzpw5877nfe39wbIsM/Of5zw7Z87MnDMDderUqVOnTp1isKIFtEZSJ+BS4JLS7w6tko8CO4F9Zna6AHntUqiBkoYA9wI3A0NKP51TirUAu4EfgK+ADcAmM2spo9TqQdLtkhZL+kPhaJa0XNJoSRcUfY3BkXShpKmSfgloWhxNkp6W1L3o686NpM6SZkjaUwHj2tIsaY6krkX74IWkEZJ+LsC4tjRJmiCpQ7rqKkBSN0lLJZ0u1LZz+URSn6L9SURSg6RtBRuVxH5Jo4v2qV0kjZd0omCDXDglaUbRfp2FpJeLdsWD5aqGIY+keQUbkYcVkoqbTEiaXbQDAVhUlHnjVX1PWl+e9fXBq/lKGg40Al18K64yTgNjzOzjrAUzGyipJ/A9cHXWsgHYA3wObAeagcOt0joCfYEJ+GnbDwwzs715RSaiqOOtJIclLZQ0yFFfD0mrPetaU27z7gvliiNrJfX20HmxpL2edY4th3dnFga2h3LGgWWKFlh99b7mWW+TMqzkZJlgTwauyX4pXjQCT5jZyRwx9niW6w88maPec5HUXdE8shI0S+obQPOSHBoOSrrIpR7XFjgJuMz/cjKx2Mx8Ww8AkvoBj+QI0RuYkkdDazEmaWuAluXCCeVsfZIGSdocQMvvcpjmuXTSo4DBeS4qA1+7tr7SxY0C7gL6EN1NA0t/p72YcmEAMIKoP47FxcCHA4hxZYNLJkWry++Q7zZ1YSIpBib2gSWhD4RUlMI3jvmmU37zAO5Pu43THiK3Et0elWJHWgZJHYGZFdAC0YNzaFKGNAPvDKfFib8c8txAZf+po5IS0wy8LaAQF1wMrNRg/gx3JCWmGdgQUIgLRxzyXF52FWdzXVJirIGK5qFXBpeTn14Vrm+gEubkSS2wH9EaW7VR6XcYXYCr4hKTDOwfXkvN0jMuIcnAbmUQUqvELiwkGVj8O9PqoUdcQpKBIeaTbVkJjCR6OPVq++O4/vdKe2WJBr0NwPvhZceTNBc+FriumWb2at4gZnYcOB6T/CcwTpKAcXnrakXs8CqpBR4MKKAxhHkZmB84npeBhwIKeDtgLBdyLci2w4G4hCQD9wJ53km0JvQFpRE7bvOgBWiKS4w1sNTX/BZIxIBAcVy5NmCsHWZ2Ki4xbS68JZCIiS7L4wG5O2Csn5IS0wz8NpCI4cCLgWIlImkw8GjAkF8kJSa2Ckm3ABsDilkHvAXsikn/zsyUoukKom9g2tKJaBw4l7BvEBvMLLYhpRnYgegJlPnzCk86m9m/SRkkzQWer5CeA0Bf7z6wtCfto9CqaohVSeaB24v1FWG01CQfpGVwMfAzou/x/m9sAz5Ny5RqYKlTXxZCUY2xOO2BBu7fxrxJ2KldtfM3sNwlo5OBZnYEeD2PohpjgZn945Ixy/eBC3F48X0e8CvRtTrhbKCZHQNm+SiqMWZl2f2eaQuoma0E1maWVDu8Z2arshTw2UM7iWip63xjHzAta6HMBprZfqIvo0KtFVYDLcBDZpZ5Fd5rF7eZNQJTfcpWKdPM7Eufgt7b4M1sCTDHt3wVMcfMlvoWznuOwHzgjZwximShmb2UJ0AuA81MZvYUMC9PnIJYADyTN0iQkyzM7AXgceBEiHhl5iQw2cxmu8x10wh2FIiZLSP6qj1utbka2A3ck6fPa0vQs1TMbCNwE/BuyLiBWAXcWBpBBCP4YTRmdsjMHgPGEJ22VjQ7gQfNbKyZBV9RKttpPmb2IdH72elEo/xKcwB4DrjezFYXUH84JHWVNEXSlpTtVamf1EmamxJji6KDzmrzzKw0JI1UtJNyV0ADd0laJKnSuwqctnoFxczWA+sBJA0l2osyjOjh4zKsOApsAjYDPwLrzGxredTWqVOnTp06deqct/wH/IHo96qEal8AAAAASUVORK5CYII=">
+      </a>
+      <a href="https://twitter.com/GobSalamanca" target="_blank">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAABVCAYAAAA49ahaAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAFNQAABTUBSBCvQAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAbGSURBVHic7ZxbjF5VFcd/i4HaDrRWRKFizFRJBOJlIBAD1VBqoVpNxIcWjZHExBiiUbCiFTUpQYxGExMR8cmYiOEBta0kJTyIt4gXJCW2FjEioZqO0FK0Lb1AO/35cOYj07n02+fsPXO+Tr5fMslkctbaa/9nn332WXvtA3369OnTp0+fPn369B7RdgBToZ4LvAk4H1g09jMPeAnYD+wDdgH/jIjdbcU5Ha2Lqs4HlgErgRXAxcBZNVwcAB4Hfgn8Avh9RBwpHWfPow6o71V/rB60LC+o96ir1IG2+zrjqIvVW9WRwkJOx4j6RXVR230vjrpI/bq6b5bEnMj/1DvUOtNKb6KG+gl1b0tiTuQZ9Qa19WdJI9Rz1Pvb1XBaNqmvblujWqir1d0tC9eN3ep72tYqCfUm9VjLgqVyVP1U25pNi3qaemfLIjXlO+ppbWt4AlYPpLtbFiaXu9rW8QTU77atSCG+2baWwMtz6Fwie47NWq+p1wAPAr01H+VxHLg2Ih5q6qCxqOp5wF+A1zb10cPsAoYj4rkmxjkj7PvMTUGhSjne3dS4kajqGuC6po2eIqxRP9DEsPbtr74S+BuwpEmDpxj/Ai6OiIN1jJqM1JvpXUGPAC8U9PcG4Ka6RrVEtcpL1m5kBhHYBKwFzouIBRGxkGr7ZTXwQ+DoSeyfSGhjnTOZMlS/1HDtt0M9XmIROY6n1HckxHyh+sdxdsfUh6x2Bm5MbOsLMyXoGVb5yCZcqq5vaDsV29TX1Ih9gXqber1jKT+rXYh/J7Y3op4+E6K+v6EAj4zz8bWGPsbzX/WNmX053SqnWofkNGGdOfWjDeIHeLjzS0R8GVhHNRc25Y6IeKqpsdX8eC9wCfA9YAMwmmDatP/TBjKoHm44stZP4e869fkGvvZZbWnn9OUCq7oC1CHTk+kHU9tOHalXAk07M+nJGRGbqUbKb2r6ejB3Tz8inoyIZ61es+8HUufmQeCKlAtTRV2ReN1UDE31x4jYGRHLgTVA6u28LSOOl1EvAv4AvLWm6dUpF6WKelXNxsezzJNk1SPip8CFwEeAx7r4yi7xUc+nmueHGpgvT7koVdS3NAigw1Lg2pNdEBFHI+LeiLgUeBtwG/AokxfuZ2fE0WEx8KqGtkk6dH33V5cAIw2D6LAVuCIiXqpjpL4CGKYayUPAjrGR3Rj1MuDPGS7OzS6KU5c3eEpPxbeyAilEgf68q1sbKW8Jr8vsx+3AAPBhFWB9RBzP9JnD6zPtu+qRIurCzCBGI2ID8BV1EDgDeDHTZw4XZNp3LXZLETU3Q3Nl55eIOJTpqwRvz7TvOshSnv6DmUFc5dgbTNtYFaa9M9NNVz1SRM0dXfOBSa+qLTEMnJPpo6seKaKWyKR/Rl1ewE8uHyzg40C3C1JE7eokgQFgk3p5AV+NGLv11xZwtb/bBSmi5i78OywGfquuU+cV8lmHlcCbC/jJ10NdkrlYHs9e9ZC6U/3s2BJrVlC3FOpDmVoHq2x7CbYUCah+/FcXij+pYiU1ofJ4Rp/Gs0q9pJCvJKzm0tsLuUvSIVXUusnk6RgAfqAuKOQvhRvJX5t2+HUhP6CuLHT7dNg8G8JabZ0cKBh3UpI6NbhBqwdMSR5Th4sFOTnmM9XtBeMtu0c19s7+86xeTmYY2Ko+YHXW6jK1RBIaqz36e8hLrk9kY/Ezr+o1Bf/rExlVv2GBJZbVnv7PZiDGcrf+uGAHTK/oqMOj6upCMQ6qP5mBGHc6U6dX1FsKBfmM+iN1WcHYlqpbC8U3kZvrxFKrPlVdCDxN2gbcUeA+4CBwGNgD/Af4U0TsqNNuQlwfB75NfkJ9KvYAS+vWqNZC3VDjP7xf7WT8ZyKWFerDxcflidw6E7FP7Mig+nTNwEbUr5pZWDbW/jz1Q+rvymo3JU/aYD3d6HSKVS385iamwK+ALcAjwNZuWyxWD4ilVG9F7wZWMXsHON4XEQ/UNco58rOR/KTvMeDvwHPA88BeqnNMC8Z+hoCLgDMz22nCfRFxfRPDHFEXUhUllMhR9hpPAJdHRKNdj8Zrr4g4QJVJP9zUR49yCFjbVFDIPP4YEduAT+f46DEEPhkR29sOBMvW87fJLW1reQLqXW0rksmdbWs4JVbH1EfbVqcmo2ovnQ2bjPox9cWWhUrliHpD25oloQ6r/2hZsG7ssCpTP3VQz7baNulFNqpNq6nbx2p7+K8ti9hhu71RfpSPOt/qQ4Z7WhLzWfXzVuXucwv1rLHOzdZXKXepn1PbyB3MLs7x76e2/nVG5+CXflsXdSo8xb9J3adPnz59+vTp06dPL/J/iKMbF1dbVNMAAAAASUVORK5CYII=">
+      </a>
+      <!-- <a href="https://twitter.com/GobSalamanca" target="_blank">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAESQAABEkBEM81gwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAZJSURBVHic7ZxrjF1VFcd/a4CCpdCm2PoIYNUgKWqrQtG2IDGgjUqKwRgj8YvBR0gqxEQSTfwiEr9oGokxMUSDQWMaSApFEUh8AU012jQaDY0RVJCaYlvflHbazs8P+870zp1zzj3PubeT/pKbzJyz9tp7/+/eZ5+z9joXTnOaKsQoK1fPApYA5wKLeocngReB/0XEsVG1bd6EUZcC1/Q+q4FLgFXAmTlFjgF/Af4I7AUeBx6PiP903dbOUVeqt6q71OM255i6U/20umLU/auM+g51R68jXTGpPqheOer+DkW9Un20QzHyeFh926j7Pwf1QvUHIxCknyn1XvUVo9YDAPWD6sHRajKLA+oHRinIYtM3NK7cqy6u279ay7V6AfAQsKFuxfPEk8ANEfHPqgUrC6NeAjwGvLZq2RHxJ2BTRDxdpVAlYdSLgZ3ARVXKjQHPAldHxF/LFigtjPoqkiivq9GwceAZ4KqI2F/GeKKMkXoOsINTVxSA1wPb1bPLGJcSBrgLWFe7SePDemBrGcOhU0n9CPD9pi0aM26MiAeKDAqF6S3Le4FT74GtmP3A6oj4V57BsKm0lYUnCsArga8WGeSOGHUDaRWqG7PZDfyOFFe5CHhvTT9dMQWsj4hfVSqlPlbzVvywOkcE9etN7/E74IdVRbm8ZkVT6vU5PleqR1rrUjtMqWuz2pt3jflsJSVP8s2IyPwWIuLvwP01/XZFALfnnZiF+nJgHyeD02U5AlwcEQfyDNR1QLU53T2TwKsj4lD/wawR8yGqiwKwo0gUgIj4NbCnhu8uWQTcOHgwS5ibalbw45J236jpv0vm9HnWVFLPAw4BZ9Vwfm1E/HSYkfoy4HlgeY06umISWB4RL04fGBwxV1NPFEibZEOJiJcYv4vwIuCq/gODwlzTwPkFFWzH8W56Vt8HhbmsgeM3lTHqrUw3NKinK2b1fVCYSxs4vm6YgXohsB04o0E9XTGr7zMXX9MG+2Hy95KHMQW8ISKeyTqpngvsAtbU9N81k8DiiDgBs0fMUuqLMu3rkwXnVzO+okC6AJ8//U+/MEtacL5FfU3WiYjYTZpG48x5039MZB1swGLgSwXnbwNyg0NjQKYwtuT8o+r7s05ExPPALS3V0wUz19x+YSrv1hU4v6e3As09GbEN+EpLdbXNf6f/6BemzSG+Athm/lbF54Bvt1hfW8xka80I03tOmGyxko3A3eqc0EZETJFWsCoPlCdIodZDwwxrMkmfMLNQn+4gSvaFotaoHzOFQ4expWd/tnqz+lTL7dxb1Mj7Wq5MU/jww0PEWavuLvBxd0aZCXWzKSevDR4sauDnW6pkkKPq5iHinKFuUfcNlH1CLQycqRvUHzVs45eLKtjU0HkRR9WhD4+enCp71F+oK4eV6Sv7mQbt21TkeFmvA11xTL21bEerYho5dThqepabYdbTdW/LsmyIsg5nAnep37Jk1kFFMu+dSrCrP3oH2THf+2o6r8LNwG/UK1r2u7Fmue8OtVCXm5KL54Mj6u0OubiWQV2k/rlGGw6b0vlLVbKtvb6X4jnTinROA2G21qz7e1UqWWO6/5hv/qbeoZbO8VOXqvfXrG9KfXPVb+Chljpbh+PqI+rHzVmuTXnGt6gvNKgnN3moKA1kPSkUOQ78gfR6zkukmM8y4Aqgycp2Arg8In6bdbIolNnFclqXS2kWqM/ia3miQHFG1btbbsg4sZ/iSGOhMO9rty1jwwngpoj4d5FRpjCmZOfMhJoFwJ0R8bNhRnkj5lpG/CJpR/wEuLOMYZ4wC3Ea/RLYHBHHyxhnZVRNkC5O47jxXpdngY0Rsa9sgawRs46FJcoe4O1VRIFsYRbSMv0kcF1EvFC1YJYwC+H6MgV8EXhXnbfbYG6q2TLgAM0290fNQeATEZEf3C7B4Ih5D6euKJOkUbKqqSgwV4S615d/kObzTuCdwPXM332QpBdX74iIblJlTQGjMhxUH1BvM+0JTQz4uUy9x24D64fV76hv7ESMvs6sGiLEdtMPWKwZFKLA5wpTTOVh23mPYPpHLz5l2XBkTfpTzZYAT5FeoTkIPAH8vPf5fUQ0ShNRzydlRq4F3gK8lfSKct6UG+nPpGQlQC8HnmsqRFlM+znTP64DY/LDOqc5TTX+D7UWsR0rig76AAAAAElFTkSuQmCC">
+      </a> -->
+      </div>
+      <div class="container">
+        <br>
+        <p style="font-size:14px; margin-top:20px; text-align:center; color:#ffffff;">
+          <img style="margin-top:-0.5%;" src="">
+          <span style="color:#ffffff;"  class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;
+          (&nbsp;464&nbsp;)&nbsp;&nbsp; 64&nbsp; 1 &nbsp;45 &nbsp;00 <br>
+          <!-- <img style="margin-top:-0.5%;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAABOgAAAToBzZiNlQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEYSURBVDiNxZTBSkJBFIb/Ey5yk6tQ2kUvUOEuEve9hhRFzxC08g1Ceg034sKNuAnxEVyKtMlFGrn52lzhMI7X0YJ+GJgz5z/fnMNcrvTHsm0G4EzSaRaOzWy8103AJTBgXX3gfFdYHZhHYCt9ArVUWAl4z4GtNAWOwvqDCPNW0rGLPyQ1szVz52VJjZQOu0EnVy5XC3KdFODIFSyCnAFfLj8M62MjT9y+6DuUdC3pcINXklSIAHuSblzcBlrZ/j7izRdwEoy1SQugEtavjWxmE0mt8DyiFzObJvgkoEL+hz0HykkwB33OAT7tBMuABWAYgb0BscdMglaBpYN9Axd7wRz00QEftvlT/ocm6VUSku7MjF91+O/6AThnjSYmMXHuAAAAAElFTkSuQmCC" alt=""> -->
+          <a target="_blank" href="https://www.google.com.mx/maps/search/Portal+Octaviano+Mu%C3%B1oz+Ledo+s%2Fn,++Zona+Centro+salamanca+gto/@20.5697975,-101.20262,17z/data=!3m1!4b1?hl=es">
+          <span style="color:#ffffff;" class="glyphicon glyphicon-map-marker" ></span></a>&nbsp;&nbsp;
+          <a style="color:#ffffff;" target="_blank"
+          href="https://www.google.com.mx/maps/search/Portal+Octaviano+Mu%C3%B1oz+Ledo+s%2Fn,++Zona+Centro+salamanca+gto/@20.5697975,-101.20262,17z/data=!3m1!4b1?hl=es">
+          Portal Octaviano Muñoz Ledo s/n, &nbsp;Zona Centro</a><br><br>
+          <!-- Última Actualización: &nbsp;&nbsp; 19/07/2019. -->
+        </p>
+      </div>
+
+    </div>
+    </body>
+    </html>
+    <script type="text/javascript">
+$(document).ready(function() {
+var $videoSrc;
+$('.video-btn').click(function() {
+    $videoSrc = $(this).data( "src" );
+});
+console.log($videoSrc);
+// when the modal is opened autoplay it
+$('#myModal_1').on('shown.bs.modal', function (e) {
+// set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+$("#video").attr('src',$videoSrc + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1" );
+})
+// stop playing the youtube video when I close the modal
+$('#myModal_1').on('hide.bs.modal', function (e) {
+    // a poor man's stop video
+    $("#video").attr('src',$videoSrc);
+})
+// document ready
+});
+
+</script>

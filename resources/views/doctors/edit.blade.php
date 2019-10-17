@@ -1,5 +1,8 @@
 @extends('layouts.panel')
 @section('content')
+@section('styles')
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+@endsection
 
           <div class="card shadow">
             <div class="card-header border-0">
@@ -60,10 +63,27 @@
                   <input type="text" name="password" value="" class="form-control">
                   <p>Ingrese un valor sólo si desea modificar la contraseña</p>
                 </div>
+                <div class="form-group">
+                  <label for="specialties">Especialidades </label>
+                  <select class="form-control selectpicker" id="specialties" name="specialties[]" data-style="btn-primary" multiple title="Seleccione una o varias">
+                    @foreach($specialties as $specialty)
+                    <option value="{{$specialty->id}}">{{$specialty->name}}</option>
+                    @endforeach
+                  </select>
+                </div>
                 <button type="submit" name="button" class="btn btn-primary">Guardar</button>
               </form>
             </div>
 
           </div>
 
+@endsection
+@section('scripts')
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+<script>
+  $(document).ready(()=>{
+    $('#specialties').selectpicker('val', @json($specialty_ids));
+  });
+</script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/i18n/defaults-*.min.js"></script> -->
 @endsection

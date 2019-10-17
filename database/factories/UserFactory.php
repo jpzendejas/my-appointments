@@ -25,8 +25,13 @@ $factory->define(App\User::class, function (Faker $faker) {
         'address' => $faker->address,
         'phone' => $faker->e164PhoneNumber,
         'role' => $faker->randomElement(['patient','doctor'])
-
-
-
-    ];
+      ];
 });
+
+$factory->state(App\User::class,'patient',[
+  'role' => 'patient'
+]);
+
+$factory->state(App\User::class,'doctor',[
+  'role' => 'doctor'
+]);

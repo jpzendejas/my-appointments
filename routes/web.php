@@ -2,7 +2,7 @@
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/login');
 });
 
 Auth::routes();
@@ -29,4 +29,23 @@ Route::middleware(['auth','admin'])->namespace('Admin')->group(function(){
 Route::middleware(['auth','doctor'])->namespace('Doctor')->group(function(){
  Route::get('/schedule', 'ScheduleController@edit');
  Route::post('/schedule', 'ScheduleController@store');
+});
+
+Route::middleware('auth')->group(function(){
+  Route::get('/appointments/create','AppointmentController@create');
+  Route::post('/appointments','AppointmentController@store');
+
+  Route::get('/appointments','AppointmentController@index');
+  Route::get('/appointments/{appointment}','AppointmentController@show');
+
+
+
+  Route::post('/appointments/{appointment}/cancel','AppointmentController@postCancel');
+  Route::get('/appointments/{appointment}/cancel','AppointmentController@showCancelForm');
+
+
+//json
+  Route::get('/specialties/{specialty}/doctors','Api\SpecialtyController@doctors');
+  Route::get('/schedule/hours','Api\ScheduleController@hours');
+
 });
