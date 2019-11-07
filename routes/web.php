@@ -42,6 +42,8 @@ Route::middleware('auth')->group(function(){
 
   Route::post('/appointments/{appointment}/cancel','AppointmentController@postCancel');
   Route::get('/appointments/{appointment}/cancel','AppointmentController@showCancelForm');
+  Route::post('/appointments/{appointment}/confirm','AppointmentController@postConfirm');
+
 
 
 //json

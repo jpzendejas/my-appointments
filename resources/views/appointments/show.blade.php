@@ -19,9 +19,18 @@
               <strong>Hora:</strong> {{$appointment->scheduled_time_12}}
             </li><li>
               <strong>Estado:</strong> {{$appointment->status}}
-            </li><li>
+            </li>
+            @if($role == 'patient' || $role == 'admin')
+            <li>
               <strong>Médico:</strong> {{$appointment->doctor->name}}
             </li>
+            @endif
+
+            @if($role == 'doctor' || $role == 'admin')
+            <li>
+              <strong>Paciente:</strong> {{$appointment->patient->name}}
+            </li>
+            @endif
             <li>
               <strong>Especialidad:</strong> {{$appointment->specialty->name}}
             </li>
@@ -39,19 +48,25 @@
             </li>
 
             </ul>
+            @if($appointment->status == 'Cancelada')
             <div class="alert alert-warning">
               <p>Acerca de la cancelación:</p>
               <ul>
                 @if($appointment->cancellation)
                 <li><strong>Fecha de cancelación:</strong>{{$appointment->cancellation->created_at}}</li>
-                <li><strong>¿Quién canceló la cita?:</strong>{{$appointment->cancellation->cancelled_by->name}}</li>
+                <li><strong>¿Quién canceló la cita?:</strong>
+                  @if(auth()->id() == $appointment->cancellation->cancelled_by_id)
+                  Tú
+                  @else
+                  {{$appointment->cancellation->cancelled_by->name}}</li>
+                  @endif
                 <li><strong>Justificación:</strong>{{$appointment->cancellation->justification}}</li>
                 @else
                 <li>Esta cita fue cancelada antes de su confirmación.</li>
                 @endif
               </ul>
-
             </div>
+            @endif
             <a href="{{url('/appointments')}}" class="btn btn-default
             ">Volver</a>
 

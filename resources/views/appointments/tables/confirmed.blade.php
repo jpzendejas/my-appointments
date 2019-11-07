@@ -5,7 +5,11 @@
       <tr>
         <th scope="col">Descripción</th>
         <th scope="col">Especialidad</th>
+        @if($role == 'patient')
         <th scope="col">Médico</th>
+        @elseif($role == 'doctor')
+        <th scope="col">Paciente</th>
+        @endif
         <th scope="col">Fecha</th>
         <th scope="col">Hora</th>
         <th scope="col">Tipo</th>
@@ -22,10 +26,11 @@
           {{$appointment->specialty->name}}
 
         </td>
-        <td>
-          {{$appointment->doctor->name}}
-
-        </td>
+        @if($role == 'patient')
+        <td>{{$appointment->doctor->name}}</td>
+        @elseif($role == 'doctor')
+        <td>{{$appointment->patient->name}}</td>
+        @endif
         <td>
           {{$appointment->scheduled_date}}
 
@@ -41,7 +46,9 @@
 
 
         <td>
-
+          @if($role == 'admin')
+          <a class="btn btn-sm btn-primary"  title="Ver cita" href="{{url('/appointments/'.$appointment->id)}}">Ver</a>
+          @endif
             <a class="btn btn-sm btn-danger"  title="Cancelar cita" href="{{url('/appointments/'.$appointment->id.'
               /cancel')}}">Cancelar</a>
 
