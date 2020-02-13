@@ -60,7 +60,7 @@ class ScheduleService implements ScheduleServiceInterface
       $start->addMinutes(30);
       $interval['end'] = $start->format('g:i A');
 
-      if ($available1212) {
+      if ($available) {
         $intervals[] = $interval;
       }
     }
