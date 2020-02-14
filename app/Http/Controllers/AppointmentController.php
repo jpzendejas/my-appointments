@@ -8,6 +8,7 @@ use  App\CancelledAppointment;
 use App\Interfaces\ScheduleServiceInterface;
 use App\Appointment;
 use Carbon\Carbon;
+use Validator;
 
 
 

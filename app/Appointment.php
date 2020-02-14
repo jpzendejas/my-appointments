@@ -16,6 +16,12 @@ class Appointment extends Model
       'scheduled_time',
       'type'
     ];
+    protected $hidden = [
+      'specialty_id','doctor_id','scheduled_time'
+    ];
+    protected $appends = [
+      'scheduled_time_12'
+    ];
  // N a 1
     public function specialty(){
       return $this->belongsTo(Specialty::class);
