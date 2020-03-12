@@ -25,6 +25,8 @@ Route::middleware(['auth','admin'])->namespace('Admin')->group(function(){
   Route::resource('patients', 'PatientController');
   //Charts
   Route::get('/charts/appointments/line','ChartController@appointments');
+  //FCM
+  Route::post('/fcm/send', 'FirebaseController@sendAll');
 });
 
 //Doctor Routes

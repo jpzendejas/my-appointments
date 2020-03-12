@@ -14,5 +14,6 @@ class FirebaseController extends Controller
         $user->device_token = $request->input("device_token");
         $user->save();
       }
+
     }
 }
