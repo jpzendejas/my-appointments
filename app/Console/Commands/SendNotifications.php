@@ -45,6 +45,7 @@ class SendNotifications extends Command
         $now = Carbon::now();
 
         $appointmentsTomorrow = $this->getAppointments24Hours($now);
+        dd($appointmentsTomorrow);
 
         foreach($appointmentsTomorrow as $appointment){
             $appointment->patient->sendFCM('No olvides tu cita mañana a esta hora');
